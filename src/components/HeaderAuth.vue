@@ -1,0 +1,23 @@
+<template>
+  <div class="headerauth">
+     <div class="header flex">
+        <div class="left-header">
+        <h1>HABITY</h1>
+       </div>
+       <div class="right-header flex">
+          <p @click="$router.push('/signup')">新規登録</p>
+         <p @click="$router.push('/')">ログイン</p>
+       </div>
+      </div>
+    </div>
+</template>
+
+<style scoped>
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+p{
+  cursor: pointer;
+}
+</style>
