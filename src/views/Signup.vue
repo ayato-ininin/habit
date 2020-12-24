@@ -6,9 +6,10 @@
   <div class="content">
       <h2>新規登録</h2>
       <div class="card">
-        <input type="text" placeholder="ユーザーネーム">
-        <input type="email" placeholder="メールアドレス">
-        <input type="password" placeholder="パスワード">
+        <input type="text" placeholder="ユーザーネーム" v-model="name">
+        <input type="email" placeholder="メールアドレス" v-model="email">
+        <input type="password" placeholder="パスワード" v-model="password">
+        <button @click="send">送信</button>
       </div>
   </div>
 
@@ -18,6 +19,20 @@
 <script>
 import HeaderAuth from '../components/HeaderAuth'
 export default {
+  data(){
+    return{
+      name:"",
+      email:"",
+      password:""
+    }
+  },
+  methods:{
+    send(){
+      axios.post('https://fathomless-springs-88074.herokuapp.com/api/register')
+      
+      }
+    },
+  
   components:{
     HeaderAuth
   }
@@ -34,5 +49,13 @@ export default {
 }
 input{
   width: 80%;
+}
+button{
+  width: 70px;
+  height: 30px;
+  display: block;
+  margin:0 auto;
+  color: black;
+  cursor: pointer;
 }
 </style>

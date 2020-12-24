@@ -9,6 +9,7 @@
       <div class="card">
         <input type="text" placeholder="ユーザーネーム">
         <input type="password" placeholder="パスワード">
+        <button @click="auth">送信</button>
       </div>
     </div>
 
@@ -39,5 +40,13 @@ export default{
 }
 input{
   width: 80%;
+}
+button{
+  width: 70px;
+  height: 30px;
+  display: block;
+  margin:0 auto;
+  color: black;
+  cursor: pointer;
 }
 </style>
