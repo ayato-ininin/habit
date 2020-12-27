@@ -17,7 +17,8 @@
 </template>
 
 <script>
-import HeaderAuth from '../components/HeaderAuth'
+import HeaderAuth from '../components/HeaderAuth';
+import axios from "axios";
 export default {
   data(){
     return{
@@ -28,7 +29,18 @@ export default {
   },
   methods:{
     send(){
-      axios.post('https://fathomless-springs-88074.herokuapp.com/api/register')
+      axios.post('https://fathomless-springs-88074.herokuapp.com/api/register',{
+        name:this.name,
+        email:this.email,
+        password:this.password
+      })
+      .then((response)=>{
+        console.log(response);
+        this.$router.replace("/");
+      })
+      .catch(error=>{
+        alert(error);
+      });
       
       }
     },

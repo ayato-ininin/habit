@@ -7,8 +7,8 @@
     <div class="content">
       <h2>ログイン</h2>
       <div class="card">
-        <input type="text" placeholder="ユーザーネーム">
-        <input type="password" placeholder="パスワード">
+        <input type="text" placeholder="ユーザーネーム" v-model="name">
+        <input type="password" placeholder="パスワード" v-model="password">
         <button @click="auth">送信</button>
       </div>
     </div>
@@ -22,8 +22,22 @@ import HeaderAuth from '../components/HeaderAuth'
 export default{
   components:{
     HeaderAuth
+  },
+  data(){
+    return{
+      name:"",
+      password:""
+    };
+  },
+  methods:{
+    auth(){
+      this.$store.dispatch('Login',{
+        name:this.name,
+        password:this.password
+      });
+    }
   }
-}
+};
 </script>
 
 <style scoped>
