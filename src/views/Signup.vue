@@ -25,7 +25,7 @@ export default {
       name:"",
       email:"",
       password:""
-    }
+    };
   },
   methods:{
     send(){
