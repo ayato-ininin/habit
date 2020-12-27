@@ -31,19 +31,7 @@ export default {
   },
   methods:{
     send(){
-      axios.post('https://fathomless-springs-88074.herokuapp.com/api/register',{
-        name:this.name,
-        email:this.email,
-        password:this.password
-      })
-      .then((response)=>{
-        // eslint-disable-next-line no-console
-        console.log(response);
-        this.$router.replace("/");
-      })
-      .catch(error=>{
-        alert(error);
-      });
+      this.$router.push('/main')
       
       }
     },
