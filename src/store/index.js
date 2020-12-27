@@ -9,7 +9,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   plugins: [createPersistedState()],
   state: {
-    auth: "",
+    auth: true,
     user:"",
   },
   mutations: {
