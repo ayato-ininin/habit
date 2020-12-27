@@ -39,7 +39,7 @@ export default {
       .then((response)=>{
         // eslint-disable-next-line no-console
         console.log(response);
-        this.$router.replace("/");
+        this.$router.replace("/main");
       })
       .catch(error=>{
         alert(error);
