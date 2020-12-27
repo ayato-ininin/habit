@@ -40,11 +40,13 @@ export default new Vuex.Store({
         auth: this.state.auth,
       })
         .then((response) => {
+          // eslint-disable-next-line no-console
           console.log(response);
           commit("logout", response.data.auth);
           router.replace("/");
         })
         .catch((error) => {
+          // eslint-disable-next-line no-console
           console.log(error);
         });
     }
