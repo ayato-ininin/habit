@@ -20,7 +20,7 @@
 
 <script>
 import HeaderAuth from '../components/HeaderAuth';
-import axios from "axios";
+
 export default {
   data(){
     return{
