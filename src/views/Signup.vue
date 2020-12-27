@@ -35,6 +35,7 @@ export default {
         password:this.password
       })
       .then((response)=>{
+        // eslint-disable-next-line no-console
         console.log(response);
         this.$router.replace("/");
       })
