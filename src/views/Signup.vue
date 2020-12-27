@@ -31,7 +31,7 @@ export default {
   },
   methods:{
     send(){
-      this.$router.push({name:'/main'})
+      this.$router.push({name:'main'})
       
       }
     },
