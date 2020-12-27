@@ -6,9 +6,11 @@
   <div class="content">
       <h2>新規登録</h2>
       <div class="card">
+        <form>
         <input type="text" placeholder="ユーザーネーム" v-model="name">
         <input type="email" placeholder="メールアドレス" v-model="email">
         <input type="password" placeholder="パスワード" v-model="password">
+        </form>
         <button @click="send">送信</button>
       </div>
   </div>

@@ -7,8 +7,10 @@
     <div class="content">
       <h2>ログイン</h2>
       <div class="card">
+        <form>
         <input type="text" placeholder="ユーザーネーム" v-model="name">
         <input type="password" placeholder="パスワード" v-model="password">
+        </form>
         <button @click="auth">送信</button>
       </div>
     </div>
