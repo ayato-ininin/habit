@@ -33,7 +33,7 @@ export default new Vuex.Store({
         }
       );
       commit("auth", responseLogin.data.auth);
-      router.replace("/main");
+      this.$router.push({name:'main'});
     },
     logout({ commit }) {
       axios.post("https://fathomless-springs-88074.herokuapp.com/api/logout", {
