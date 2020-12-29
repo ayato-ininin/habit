@@ -32,7 +32,7 @@ export default new Vuex.Store({
           password: password,
         }
       );
-      commit("auth", responseLogin.auth);
+      commit("auth", responseLogin.data.auth);
       router.replace("/main")
         .catch(error => {
           console.info(error.message)
