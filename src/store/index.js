@@ -33,7 +33,7 @@ export default new Vuex.Store({
         }
       );
       commit("auth", responseLogin.auth);
-      this.$router.push({name:"Main"});
+      router.replace("/main");
     },
     logout({ commit }) {
       axios.post("http://127.0.0.1:8000/api/logout", {
