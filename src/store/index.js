@@ -26,7 +26,7 @@ export default new Vuex.Store({
   actions: {
     async login({ commit }, { name, password }) {
       const responseLogin = await axios.post(
-        "http://127.0.0.1:8000/api/login",
+        "https://fathomless-springs-88074.herokuapp.com/api/login",
         {
           name: name,
           password: password,
@@ -40,7 +40,7 @@ export default new Vuex.Store({
 
     },
     logout({ commit }) {
-      axios.post("http://127.0.0.1:8000/api/logout", {
+      axios.post("https://fathomless-springs-88074.herokuapp.com/api/logout", {
         auth: this.state.auth,
       })
         .then((response) => {
