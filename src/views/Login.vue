@@ -33,7 +33,7 @@ export default{
   },
   methods:{
     auth(){
-      this.$store.dispatch("Login",{
+      this.$store.dispatch("login",{
         name:this.name,
         password:this.password
       });
