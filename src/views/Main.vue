@@ -19,7 +19,7 @@
 
 <script>
 import axios from "axios";
-import AddMaster from '../components/AddMaster';
+import AddMaster from '../components/AddMaster.vue';
 export default {
   components:{
     AddMaster
