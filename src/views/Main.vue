@@ -1,7 +1,7 @@
 <template>
   <div class="habit">
     <Add></Add>
-    <br>
+    
     <div v-for="(value,index) in habits" :key="index">
       <div id="content">
         
@@ -19,7 +19,7 @@
 
 <script>
 import axios from "axios";
-import Add from '../components/Add';
+import Add from '../components/Add.vue';
 export default {
   data(){
     return{
