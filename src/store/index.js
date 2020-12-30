@@ -32,7 +32,16 @@ export default new Vuex.Store({
           password: password,
         }
       );
+      const responseuser = await axios.get(
+        "https://fathomless-springs-88074.herokuapp.com/api/user",
+        {
+          params: {
+            name: name,
+          },
+        }
+      );
       commit("auth", responseLogin.data.auth);
+      commit("user", responseuser.data.data[0]);
       router.replace("/main")
         .catch(error => {
           console.info(error.message)
