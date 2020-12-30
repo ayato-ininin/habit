@@ -21,6 +21,9 @@
 import axios from "axios";
 import AddMaster from '../components/AddMaster';
 export default {
+  components:{
+    AddMaster
+  },
   data(){
     return{
       habits:[],
@@ -34,6 +37,7 @@ export default {
       axios.delete("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.habits[index].item.id)
       .then((response)=>{
         console.log(response);
+        // eslint-disable-line no-console
         this.$router.go({
           path:this.$router.currentRoute.path,
           force:true,
@@ -54,6 +58,7 @@ export default {
       }
       this.habits=data;
       console.log(this.habits);
+      // eslint-disable-line no-console
     }
     
   },
