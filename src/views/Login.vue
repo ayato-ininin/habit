@@ -93,15 +93,15 @@ h3{
 .footer{
   text-align: center;
 }
-@media screen and(max-width:480px){
+@media screen and(max-width:320px){
   .content{ 
-  width: 50%;
+  width: 70%;
 }
 input{
   width: 60%;
 }
 h2{
-  font-size:20px;
+  font-size:10px;
   margin-top: 7px;
 }
 

@@ -33,12 +33,13 @@ p{
 }
 .headerauth{
   height:130px
-}@media screen and(max-width:480px){
+}
+@media screen and(max-width:320px){
 h1{
-  font-size: 50px;
+  font-size: 3px;
 }
 p{
-  font-size: 10px;
+  font-size: 7px;
 }
 .flex{
   justify-content: space-around;

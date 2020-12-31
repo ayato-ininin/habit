@@ -13,6 +13,7 @@
         </form>
         <button @click="send">送信</button>
       </div>
+      
       <div class="footer">
       <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
       </div>
@@ -100,9 +101,9 @@ h3{
 .footer{
   text-align: center;
 }
-@media screen and(max-width:480px){
+@media screen and(max-width:320px){
   .content{ 
-  width: 50%;
+  width: 70%;
 }
 input{
   width: 60%;
