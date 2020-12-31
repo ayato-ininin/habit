@@ -8,10 +8,12 @@
         
         <ol class="inside">
           <li>{{value.item.habit}}
-            <button @click="del(index)">削除</button>
-            <input type="number" v-model="number">/100
-            <textarea v-model="contain"></textarea>         
-           </li>
+            <button @click="del(index)">削除</button> 
+            <p @click="$router.push({
+            path:'/detail/' +value.item.id,
+             params:{id:value.item.id},
+             })">記録</p>      
+          </li>
         </ol>
       </div>
 
@@ -19,12 +21,6 @@
 
     <div class="logout">
       <button @click="logout">logout</button>
-    </div>
-
-      <br>
-
-    <div class="protect">
-      <button>保存</button>
     </div>
 
   </div>
@@ -41,9 +37,7 @@ export default {
   },
   data(){
     return{
-      habits:[],
-      contain:"",
-      number:""
+      habits:[]
     };
   },
   methods:{

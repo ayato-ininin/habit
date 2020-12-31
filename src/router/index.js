@@ -5,6 +5,7 @@ import Signup from '../views/Signup.vue'
 import Main from '../views/Main.vue'
 import store from "../store/index"
 import Total from '../views/Total.vue'
+import Detail from '../views/Detail.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,12 @@ const routes = [
     meta: {
       requiresAuth:true,
     }
+  },
+  {
+    path: '/detail/:id',
+    name: "Detail",
+    component: Detail,
+    props:true,
   }
 ]
 
