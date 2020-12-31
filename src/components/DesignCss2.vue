@@ -1,49 +1,50 @@
 <template>
-  <div class="gradient"></div>
+  <div id="design">
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+  </div>
 </template>
 
+
 <style scoped>
-.gradient {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    farthest-corner at 0 0,
-    #ffa500 0%,
-    #ffa500 50%,
-    #00ffff 90%,
-    #00ffff 100%
-  );
+
+
+body {
+  margin:0;
 }
 
-.gradient:before {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    300px at 350px 200px,
-    rgba(255, 204, 51, 1) 0%,
-    rgba(255, 204, 51, 1) 20%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ffc0cb 50%, #fffacd 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
 
-.gradient:after {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    300px at 0 350px,
-    rgba(102, 204, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 </style>
