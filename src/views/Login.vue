@@ -15,21 +15,20 @@
       </div>
     </div>
 
-    <div class="footer">
-    <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
-    </div>
-
-
+    <Footer></Footer>
+    
   </div>
 </template>
 
 <script>
 import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
+import Footer from '../components/Footer';
 export default{
   components:{
     HeaderAuth,
-    DesignCss
+    DesignCss,
+    Footer
   },
   data(){
     return{
@@ -78,20 +77,12 @@ button{
 h2{
   font-size:30px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 button:hover{
   background-color:#afeeee ;
   color: white;
   border: none;
 }
-h3{
-  
-  color: white;
-  position: absolute;
-  bottom: 0;
-}
-.footer{
-  text-align: center;
-}
+
 </style>

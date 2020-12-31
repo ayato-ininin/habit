@@ -14,9 +14,8 @@
         <button @click="send">送信</button>
       </div>
 
-      <div class="footer">
-      <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
-      </div>
+    <Footer></Footer>
+     
   </div>
 
   </div>
@@ -25,6 +24,7 @@
 <script>
 import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
+import Footer from '../components/Footer';
 import axios from "axios";
 export default {
   data(){
@@ -55,7 +55,8 @@ export default {
   
   components:{
     HeaderAuth,
-    DesignCss
+    DesignCss,
+    Footer
   }
 };
 </script>
@@ -92,14 +93,6 @@ button:hover{
   color: white;
   border: none;
 }
-h3{
-  
-  color: white;
-  position: absolute;
-  bottom: 0;
-}
-.footer{
-  text-align: center;
-}
+
 
 </style>
