@@ -9,14 +9,24 @@
         <ol class="inside">
           <li>{{value.item.habit}}
             <button @click="del(index)">削除</button>
-          </li>
+            <input type="number" v-model="number">/100
+            <textarea v-model="contain"></textarea>         
+           </li>
         </ol>
       </div>
 
     </div>
+
     <div class="logout">
-    <button @click="logout">logout</button>
+      <button @click="logout">logout</button>
     </div>
+
+      <br>
+
+    <div class="protect">
+      <button>保存</button>
+    </div>
+
   </div>
 </template>
 
@@ -32,6 +42,8 @@ export default {
   data(){
     return{
       habits:[],
+      contain:"",
+      number:""
     };
   },
   methods:{

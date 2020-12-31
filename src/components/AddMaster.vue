@@ -4,6 +4,9 @@
   <h1>HABITY</h1>
   </div>
   <br>
+  <div class="total">
+    <p @click="$router.push('/total')">一覧へ</p>
+  </div>
   <div class="content">
     <input type="text" v-model="common">
     <button @click="send">習慣を追加</button>

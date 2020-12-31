@@ -4,6 +4,7 @@ import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import Main from '../views/Main.vue'
 import store from "../store/index"
+import Total from '../views/Total.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,14 @@ const routes = [
     path: '/main',
     name: 'Main',
     component: Main,
+    meta: {
+      requiresAuth:true,
+    }
+  },
+  {
+    path: '/total',
+    name: 'Total',
+    component: Total,
     meta: {
       requiresAuth:true,
     }
