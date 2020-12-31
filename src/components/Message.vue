@@ -60,7 +60,7 @@ export default {
   created(){
     this.gethabits();
   },
-}
+};
 </script>
 
 <style scoped>
