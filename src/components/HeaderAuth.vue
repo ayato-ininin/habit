@@ -13,12 +13,16 @@
 </template>
 
 <style scoped>
-
+h1{
+  font-size: 80px;
+  color: white;
+}
 .flex{
   display: flex;
   justify-content: space-between;
 }
 p{
   cursor: pointer;
+  color: white;
 }
 </style>
