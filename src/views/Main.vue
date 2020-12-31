@@ -97,6 +97,6 @@ button:hover{
 }
 .inside{
   list-style-position: inside;
-  list-style-type: decimal-leading-zero;
+  list-style-type: circle;
 }
 </style>
