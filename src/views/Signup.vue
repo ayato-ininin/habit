@@ -13,6 +13,8 @@
         </form>
         <button @click="send">送信</button>
       </div>
+
+      <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
   </div>
 
   </div>
@@ -87,5 +89,11 @@ button:hover{
   background-color:#afeeee ;
   color: white;
   border: none;
+}
+h3{
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 </style>

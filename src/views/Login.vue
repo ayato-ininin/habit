@@ -15,6 +15,8 @@
       </div>
     </div>
 
+    <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
+
 
   </div>
 </template>
@@ -79,5 +81,11 @@ button:hover{
   background-color:#afeeee ;
   color: white;
   border: none;
+}
+h3{
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 </style>

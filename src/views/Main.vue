@@ -1,5 +1,6 @@
 <template>
   <div class="habit">
+    <DesignCss2></DesignCss2>
     <AddMaster></AddMaster>
     
     <div v-for="(value,index) in habits" :key="index">
@@ -20,9 +21,11 @@
 <script>
 import axios from "axios";
 import AddMaster from '../components/AddMaster.vue';
+import DesignCss2 from '../components/DesignCss2'
 export default {
   components:{
-    AddMaster
+    AddMaster,
+    DesignCss2
   },
   data(){
     return{
