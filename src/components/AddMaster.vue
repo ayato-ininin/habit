@@ -47,7 +47,7 @@ export default {
 <style scoped>
 h1{
   font-size: 90px;
-  color: #afeeee;
+  color: #e0ffff;
   line-height: 130px;
   margin-left: 15px;
 }

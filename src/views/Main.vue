@@ -4,7 +4,7 @@
     <AddMaster></AddMaster>
     
     <div v-for="(value,index) in habits" :key="index">
-      <div id="content">
+      <div class="content">
         
         <ol>
           <li>{{value.item.habit}}
@@ -82,8 +82,12 @@ button:hover{
   color: white;
   border: none;
 }
-#content ol{
+.content ol{
+  display: list-item;
   list-style: decimal-leading-zero;
   margin: 20px 10px;
+}
+.content{
+  text-align: center;
 }
 </style>
