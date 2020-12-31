@@ -82,8 +82,8 @@ button:hover{
   color: white;
   border: none;
 }
-.content ol{
+#content ol{
   list-style: decimal-leading-zero;
-  margin: 10px;
+  margin: 20px 10px;
 }
 </style>
