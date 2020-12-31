@@ -58,14 +58,18 @@ export default {
 
 <style scoped>
 .content{
+  color: white;
   width: 50%;
-  border:1px solid black;
+  border:1px solid white;
   text-align: center;
   margin: 0 auto;
   height: 150px;
+  display: table-cell;
+  vertical-align: middle;
 }
 input{
   width: 80%;
+  margin:7px 0;
 }
 button{
   width: 70px;
@@ -74,5 +78,12 @@ button{
   margin:0 auto;
   color: black;
   cursor: pointer;
+}
+h2{
+  font-size:12px;
+}
+.button:hover{
+  background-color:#7fffd4 ;
+  color: white;
 }
 </style>
