@@ -33,5 +33,15 @@ p{
 }
 .headerauth{
   height:130px
+}@media screen and(max-width:480px){
+h1{
+  font-size: 50px;
+}
+p{
+  font-size: 10px;
+}
+.flex{
+  justify-content: space-around;
+}
 }
 </style>

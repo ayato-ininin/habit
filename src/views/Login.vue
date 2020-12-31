@@ -15,7 +15,9 @@
       </div>
     </div>
 
+    <div class="footer">
     <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
+    </div>
 
 
   </div>
@@ -83,9 +85,26 @@ button:hover{
   border: none;
 }
 h3{
-  text-align: center;
+  
   color: white;
   position: absolute;
   bottom: 0;
+}
+.footer{
+  text-align: center;
+}
+@media screen and(max-width:480px){
+  .content{ 
+  width: 50%;
+}
+input{
+  width: 60%;
+}
+h2{
+  font-size:20px;
+  margin-top: 7px;
+}
+
+
 }
 </style>
