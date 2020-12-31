@@ -50,14 +50,18 @@ export default{
   justify-content: space-between;
 }
 .content{
+  color: white;
   width: 50%;
-  border:1px solid black;
+  border:3px solid white;
   text-align: center;
   margin: 0 auto;
-  height: 150px;
+  height: 300px;
+  margin-top: 100px;
+  
 }
 input{
-  width: 80%;
+  width: 60%;
+  margin:15px 0;
 }
 button{
   width: 70px;
@@ -66,5 +70,13 @@ button{
   margin:0 auto;
   color: black;
   cursor: pointer;
+}
+h2{
+  font-size:20px;
+}
+button:hover{
+  background-color:#afeeee ;
+  color: white;
+  border: none;
 }
 </style>

@@ -60,16 +60,16 @@ export default {
 .content{
   color: white;
   width: 50%;
-  border:5px solid white;
+  border:3px solid white;
   text-align: center;
   margin: 0 auto;
-  height: 200px;
-  align-items: center;
+  height: 300px;
+  margin-top: 100px;
   
 }
 input{
   width: 60%;
-  margin:7px 0;
+  margin:15px 0;
 }
 button{
   width: 70px;
@@ -83,7 +83,8 @@ h2{
   font-size:20px;
 }
 button:hover{
-  background-color:#7fffd4 ;
+  background-color:#afeeee ;
   color: white;
+  border: none;
 }
 </style>
