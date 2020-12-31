@@ -1,6 +1,6 @@
 <template>
    <div class="footer">
-      <h3>Copyright © 2020 ayato All Rights Resarved.</h3>
+      <h3>Copyright © 2020 ayato All Rights Reserved.</h3>
       </div>
 
 </template>
@@ -13,6 +13,6 @@ h3{
   bottom: 0;
 }
 .footer{
-  text-align: center;
+  margin:0 auto;
 }
 </style>
