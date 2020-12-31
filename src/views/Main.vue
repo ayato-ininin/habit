@@ -7,7 +7,7 @@
         
         <ul>
           <li>{{value.item.habit}}
-            <button @click="del">削除</button>
+            <button @click="del(index)">削除</button>
           </li>
         </ul>
       </div>
