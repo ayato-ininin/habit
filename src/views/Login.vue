@@ -64,7 +64,7 @@ export default{
   
 }
 input{
-  width: 50%;
+  width: 70%;
   margin:15px 0;
 }
 button{
@@ -78,6 +78,7 @@ button{
 h2{
   font-size:30px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 button:hover{
   background-color:#afeeee ;
@@ -92,19 +93,5 @@ h3{
 }
 .footer{
   text-align: center;
-}
-@media screen and(max-width:320px){
-  .content{ 
-  width: 70%;
-}
-input{
-  width: 60%;
-}
-h2{
-  font-size:10px;
-  margin-top: 7px;
-}
-
-
 }
 </style>
