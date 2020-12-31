@@ -34,7 +34,7 @@ export default {
       this.$store.dispatch('logout')
     },
     del(index){
-      axios.delete("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.habits[index].items.item.id)
+      axios.delete("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.habits.data.data[index].id)
       .then((response)=>{
         console.log(response);
         // eslint-disable-line no-console
