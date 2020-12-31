@@ -69,7 +69,7 @@ export default {
 }
 input{
   width: 60%;
-  margin:15px 0;
+  margin:25px 0;
 }
 button{
   width: 70px;
@@ -80,7 +80,7 @@ button{
   cursor: pointer;
 }
 h2{
-  font-size:20px;
+  font-size:30px;
 }
 button:hover{
   background-color:#afeeee ;

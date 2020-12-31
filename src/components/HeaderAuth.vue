@@ -14,8 +14,9 @@
 
 <style scoped>
 h1{
-  font-size: 80px;
+  font-size: 90px;
   color: white;
+  line-height: 100px;
 }
 .flex{
   display: flex;
