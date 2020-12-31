@@ -5,11 +5,11 @@
     <div v-for="(value,index) in habits" :key="index">
       <div id="content">
         
-        <ul>
+        <ol>
           <li>{{value.item.habit}}
             <button @click="del(index)">削除</button>
           </li>
-        </ul>
+        </ol>
       </div>
 
     </div>
@@ -69,15 +69,18 @@ export default {
 </script>
 
 <style scoped>
-h1{
-  font-size: 80px;
-}
+
+
 button{
-  width: 70px;
-  height: 30px;
-  display: block;
-  margin:0 auto;
-  color: black;
   cursor: pointer;
+}
+button:hover{
+  background-color:#afeeee ;
+  color: white;
+  border: none;
+}
+.content ol{
+  list-style: decimal-leading-zero;
+  margin: 10px;
 }
 </style>

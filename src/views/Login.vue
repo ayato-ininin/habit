@@ -51,7 +51,7 @@ export default{
 }
 .content{
   color: white;
-  width: 50%;
+  width: 35%;
   border:3px solid white;
   text-align: center;
   margin: 0 auto;
@@ -60,8 +60,8 @@ export default{
   
 }
 input{
-  width: 60%;
-  margin:35px 0;
+  width: 50%;
+  margin:15px 0;
 }
 button{
   width: 70px;
@@ -73,6 +73,7 @@ button{
 }
 h2{
   font-size:30px;
+  margin-top: 10px;
 }
 button:hover{
   background-color:#afeeee ;

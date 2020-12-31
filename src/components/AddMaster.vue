@@ -1,9 +1,13 @@
 <template>
 <div id="add">
+  <div class="title">
   <h1>HABITY</h1>
+  </div>
   <br>
+  <div class="content">
     <input type="text" v-model="common">
     <button @click="send">習慣を追加</button>
+    </div>
 </div>
 </template>
 
@@ -39,3 +43,27 @@ export default {
   
 }
 </script>
+
+<style scoped>
+h1{
+  font-size: 90px;
+  color: white;
+  line-height: 130px;
+  margin-left: 15px;
+}
+.title{
+  height: 130px;
+}
+button{
+  cursor: pointer;
+}
+button:hover{
+  background-color:#afeeee ;
+  color: white;
+  border: none;
+}
+.content{
+  text-align: center;
+  margin: 10px 0;
+}
+</style>

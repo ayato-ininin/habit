@@ -16,7 +16,8 @@
 h1{
   font-size: 90px;
   color: white;
-  line-height: 100px;
+  line-height: 130px;
+  margin-left: 15px;
 }
 .flex{
   display: flex;
@@ -25,12 +26,12 @@ h1{
 p{
   cursor: pointer;
   color: white;
-  line-height: 100px;
+  line-height: 130px;
   font-size: 20px;
   font-weight: bold;
   margin-right: 15px;
 }
 .headerauth{
-  height:100px
+  height:130px
 }
 </style>
