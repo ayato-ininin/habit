@@ -28,7 +28,7 @@ export default {
         alert("習慣を追加しました");
         this.common="";
         this.$router.go({
-          path:this.$router.curretntRoute.path,
+          path:this.$router.currentRoute.path,
           force:true,
         });
       });
