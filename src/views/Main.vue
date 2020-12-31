@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import AddMaster from '../components/AddMaster.vue';
 import DesignCss2 from '../components/DesignCss2'
 import Message from '../components/Message'
