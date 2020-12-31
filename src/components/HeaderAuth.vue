@@ -14,7 +14,7 @@
 
 <style scoped>
 h1{
-  font-size: 80px;
+  font-size: 100px;
   color: white;
 }
 .flex{
@@ -24,5 +24,12 @@ h1{
 p{
   cursor: pointer;
   color: white;
+  line-height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.headerauth{
+  height:100px
 }
 </style>
