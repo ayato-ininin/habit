@@ -1,6 +1,6 @@
 <template>
   <div class="habit">
-
+    <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
 
   <div class="content">
@@ -20,6 +20,7 @@
 
 <script>
 import HeaderAuth from '../components/HeaderAuth';
+import DesignCss from '../components/DesignCss';
 import axios from "axios";
 export default {
   data(){
@@ -49,7 +50,8 @@ export default {
     },
   
   components:{
-    HeaderAuth
+    HeaderAuth,
+    DesignCss
   }
 };
 </script>

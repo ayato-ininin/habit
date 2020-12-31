@@ -1,7 +1,7 @@
 <template>
 
   <div class="habit">
-
+    <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
 
     <div class="content">
@@ -20,10 +20,12 @@
 </template>
 
 <script>
-import HeaderAuth from '../components/HeaderAuth'
+import HeaderAuth from '../components/HeaderAuth';
+import DesignCss from '../components/DesignCss';
 export default{
   components:{
-    HeaderAuth
+    HeaderAuth,
+    DesignCss
   },
   data(){
     return{
