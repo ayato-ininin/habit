@@ -6,7 +6,7 @@
     <div v-for="(value,index) in habits" :key="index">
       <div class="content">
         
-        <ol style="list-style-position:inside;">
+        <ol class="inside">
           <li>{{value.item.habit}}
             <button @click="del(index)">削除</button>
           </li>
@@ -14,7 +14,9 @@
       </div>
 
     </div>
-    <button class="logout" @click="logout">logout</button>
+    <div class="logout">
+    <button @click="logout">logout</button>
+    </div>
   </div>
 </template>
 
@@ -83,8 +85,7 @@ button:hover{
   border: none;
 }
 .content li{
-  display: list-item;
-  list-style: decimal-leading-zero;
+  
   margin: 20px 10px;
 }
 .content{
@@ -93,5 +94,9 @@ button:hover{
 .logout{
   text-align: center;
   margin-top: 20px;
+}
+.inside{
+  list-style-position: inside;
+  list-style-type: decimal-leading-zero;
 }
 </style>
