@@ -2,7 +2,7 @@
   <div class="detail">
     <DesignCss2></DesignCss2>
     <h1>HABITY</h1>
-    <Main :id="id">
+    
   </div>
 </template>
 
