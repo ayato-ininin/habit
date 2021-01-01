@@ -66,6 +66,7 @@ export default {
       })
       .then((response)=>{
         console.log(response);
+        // eslint-disable-line no-console
         this.contain="";
         this.number="";
         this.$router.go({
@@ -74,7 +75,7 @@ export default {
         });
       });
     },
-    contain(){
+    reload(){
       axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       .then((response)=>{
         this.data=response.data.content;
@@ -86,7 +87,7 @@ export default {
   },
   created(){
     this.gethabits();
-    this.contain();
+    this.reload();
   }
 }
 </script>
