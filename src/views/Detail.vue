@@ -4,7 +4,7 @@
     <h1>HABITY</h1>
     <br><br>
     <div id="element">
-      <p>{{habits.item.habit}}</p>
+      <p v-for="(items,index) in habits" :key="index">{{items.item.habit}}</p>
       <input type="number" v-model="point">/100
       <textarea v-model="contain"></textarea>
     </div>
