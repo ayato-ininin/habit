@@ -13,7 +13,7 @@
 
 <script>
 import DesignCss2 from '../components/DesignCss2';
-import Message from '../components/Message'
+import axios from "axios";
 
 export default {
   props:["id"],
@@ -40,6 +40,7 @@ export default {
       });
       this.habits=data;
       console.log(this.habits);
+      // eslint-disable-line no-console
 
     }
   },
