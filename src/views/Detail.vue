@@ -14,9 +14,13 @@
     <button @click="send">保存</button>
 
     <div class="path">
-      <div v-for="(value,index) in data" :key="index">
-        <p>{{value.contain}}</p>
+      <div v-for="(values,index) in data2" :key="index">
+        <p>{{values.point.point}}</p>
       </div>
+      <div v-for="(value,index) in data" :key="index">
+        <p>{{value.content.content}}</p>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -36,6 +40,7 @@ export default {
       contain:"",
       point:"",
       data:"",
+      data2:"",
       habits:[]
     }
   },
@@ -72,7 +77,8 @@ export default {
     contain(){
       axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       .then((response)=>{
-        this.data=response.data.contain;
+        this.data=response.data.content;
+        this.data2=response.data.point;
         console.log(this.data);
         // eslint-disable-line no-console
       });
