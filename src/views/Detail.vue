@@ -18,8 +18,7 @@ import axios from "axios";
 export default {
   props:["id"],
   components:{
-    DesignCss2,
-    Message
+    DesignCss2
    
   },
   data(){
