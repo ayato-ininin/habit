@@ -49,12 +49,13 @@ export default {
         .get("https://fathomless-springs-88074.herokuapp.com/api/habits/" + habits.data.data[i].id)
         .then((response)=>{
           data.push(response.data);
+        
         });
       }
       this.habits=data;
       console.log(this.habits);
       // eslint-disable-line no-console
-    }
+    },
     
   },
   created(){
