@@ -8,6 +8,16 @@
       <input type="number" v-model="point">/100
       <textarea v-model="contain"></textarea>
     </div>
+
+    <br><br><br>
+
+    <button @click="send">保存</button>
+
+    <div class="path">
+      <div v-for="(value,index) in data" :key="index">
+        <p>{{value.contain}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -41,10 +51,36 @@ export default {
       console.log(this.habits);
       // eslint-disable-line no-console
 
-    }
+    },
+    send(){
+      axios.post("https://fathomless-springs-88074.herokuapp.com/api/contain",{
+        habit_id:this.id,
+        user_id:this.$store.user.id,
+        contain:this.contain,
+        point:this.point
+      })
+      .then((response)=>{
+        console.log(response);
+        this.contain="";
+        this.number="";
+        this.$router.go({
+          path:this.$router.currentRoute.path,
+          force:true,
+        });
+      });
+    },
+    contain(){
+      axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+      .then((response)=>{
+        this.data=response.data.contain;
+        console.log(this.data);
+        // eslint-disable-line no-console
+      });
+    },
   },
   created(){
     this.gethabits();
+    this.contain();
   }
 }
 </script>
@@ -55,5 +91,13 @@ h1{
   color: #add8e6;
   line-height: 130px;
   margin-left: 15px;
+}
+button{
+  cursor: pointer;
+}
+button:hover{
+  background-color:#afeeee ;
+  color: white;
+  border: none;
 }
 </style>
