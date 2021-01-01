@@ -8,11 +8,13 @@
 
 <script>
 import DesignCss2 from '../components/DesignCss2';
+import Message from '../components/Message'
 
 export default {
   props:['id'],
   components:{
-    DesignCss2
+    DesignCss2,
+    Message
    
   },
   data(){
