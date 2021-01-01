@@ -15,10 +15,10 @@
 
     <div class="path">
       <div v-for="(values,index) in data2" :key="index">
-        <p>{{values.point.point}}</p>
+        <p>{{values.content.content.point}}</p>
       </div>
       <div v-for="(value,index) in data" :key="index">
-        <p>{{value.content.content}}</p>
+        <p>{{value.content.content.contain}}</p>
       </div>
       
     </div>
