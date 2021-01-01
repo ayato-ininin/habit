@@ -2,7 +2,12 @@
   <div class="detail">
     <DesignCss2></DesignCss2>
     <h1>HABITY</h1>
-    <Message :id="id"/>
+    <br><br>
+    <div id="element">
+      <p>{{habits.item.habit}}</p>
+      <input type="number" v-model="point">/100
+      <textarea v-model="contain"></textarea>
+    </div>
   </div>
 </template>
 
@@ -11,7 +16,7 @@ import DesignCss2 from '../components/DesignCss2';
 import Message from '../components/Message'
 
 export default {
-  props:['id'],
+  props:["id"],
   components:{
     DesignCss2,
     Message
@@ -21,7 +26,25 @@ export default {
     return{
       contain:"",
       point:"",
+      data:"",
+      habits:[]
     }
+  },
+  methods:{
+    async gethabits(){
+      let data=[];
+ 
+      await axios.get(" https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+      .then((response)=>{
+        data.push(response.data);
+      });
+      this.habits=data;
+      console.log(this.habits);
+
+    }
+  },
+  created(){
+    this.gethabits();
   }
 }
 </script>
