@@ -48,7 +48,7 @@ export default {
     async gethabits(){
       let data=[];
  
-      await axios.get(" https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+      await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       .then((response)=>{
         data.push(response.data);
       });
@@ -85,10 +85,7 @@ export default {
       });
     },
   },
-  created(){
-    this.gethabits();
-    this.reload();
-  }
+  
 }
 </script>
 
