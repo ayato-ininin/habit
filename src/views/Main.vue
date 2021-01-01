@@ -58,13 +58,13 @@ export default {
         });
       });
     },
-    gethabits(){
+    async gethabits(){
       let data=[];
-      const habits =axios.get(
+      const habits =await axios.get(
        " https://fathomless-springs-88074.herokuapp.com/api/habits"
       );
       for (let i=0; i<habits.data.data.length;i++){
-        axios
+        await axios
         .get("https://fathomless-springs-88074.herokuapp.com/api/habits/" + habits.data.data[i].id)
         .then((response)=>{
           data.push(response.data);
