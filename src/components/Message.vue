@@ -15,7 +15,6 @@
       </div>
 
     </div>
-  </div>
 </template>
 
 <script>
@@ -27,7 +26,6 @@ export default {
     };
   },
   methods:{
-    
     del(index){
       axios.delete("https://fathomless-springs-88074.herokuapp.com/api/habits/" + this.habits[index].item.id)
       .then((response)=>{
@@ -56,12 +54,13 @@ export default {
       console.log(this.habits);
       // eslint-disable-line no-console
     },
-    
-  },
+  }
+  ,
   created(){
     this.gethabits();
   },
-};
+  
+}
 </script>
 
 <style scoped>
