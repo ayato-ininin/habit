@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="message">
   <div v-for="(value,index) in habits" :key="index">
       <div class="content">
         
@@ -81,7 +81,7 @@ button:hover{
 }
 .content{
   text-align: left;
-  margin-left: 100px;
+  
 }
 
 .inside{
@@ -92,5 +92,11 @@ button:hover{
   color: aquamarine;
   margin-top: 5px;
   cursor: pointer;
+}
+p{
+  font-size: 20px;
+}
+.message{
+  text-align: center;
 }
 </style>

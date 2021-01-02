@@ -43,6 +43,7 @@ p{
   font-weight: bold;
   margin-right: 10px;
   text-decoration: underline;
+  padding: 0 auto;
 }
 .headerauth{
   height:130px

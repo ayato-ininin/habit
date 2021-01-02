@@ -1,14 +1,16 @@
 <template>
-  <div class="detail">
+<div class="detail">
     <DesignCss2></DesignCss2>
     <Header></Header>
     <br><br>
+  <div class="center">
     <div id="element">
-      <h2 v-for="(items,index) in habits" :key="index">☆{{items.item.habit}}</h2>
+      <h2 v-for="(items,index) in habits" :key="index">・{{items.item.habit}}</h2>
       <br>
       <p>今日もお疲れさまです！</p>
+      <br><br>
       <input type="number" v-model="point" placeholder="今日の点数">/100
-      <br>
+      <br><br>
       <textarea v-model="contain" placeholder="今日の一言メモ..."></textarea>
     </div>
 
@@ -19,13 +21,14 @@
 
     <div class="path">
       <div v-for="(values,index) in data" :key="index">
-        <p>{{values.content.point}}</p>
-        <p>{{values.content.contain}}</p>
-        <p>{{values.content.created_at}}</p>
+        <p>点数：{{values.content.point}}点</p>
+        <p class="textcontent">メモ：{{values.content.contain}}</p>
+        <p>日付・時間{{values.content.created_at}}</p>
       </div>
       
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -106,10 +109,16 @@ button:hover{
   border: none;
 }
 textarea{
-  height: 50px;
-  width: 100px;
+  height: 80px;
+  width: 200px;
 }
 h2{
   font-size: 30px;
+}
+.center{
+  text-align: center;
+}
+.textcontent{
+  border: 1px solid blueviolet;
 }
 </style>
