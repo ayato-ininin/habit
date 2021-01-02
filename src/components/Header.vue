@@ -90,12 +90,12 @@ color: blue;
   z-index: 2;
   width: 65%;
   padding: 10px;
-  background-color: rgba(255, 235, 205, 0.7);
+  background-color: rgba(255, 235, 205, 0.9);
 }
 h3{
   font-size: 20px;
 }
-button{
+.contents button{
   cursor: pointer;
   text-align: center;
 }
