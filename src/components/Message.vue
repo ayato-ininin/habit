@@ -105,6 +105,7 @@ button:hover{
   color: #00ff00;
   margin-top: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 .register:hover{
   text-decoration: underline;
