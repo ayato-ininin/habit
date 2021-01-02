@@ -104,9 +104,12 @@ button:hover{
 p{
   font-size: 20px;
 }
-.content p{
-  text-align: left;
+.content li{
+  
   display: inline-block;
+}
+.content ol li p{
+  text-align: left;
 }
 
 

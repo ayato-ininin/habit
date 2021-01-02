@@ -20,7 +20,7 @@
     <br><br>
 
     <div class="path">
-      <div v-for="(values,index) in data" :key="index">
+      <div class="datacontent" v-for="(values,index) in data" :key="index">
         <p>日付/時間：{{values.content.created_at}}</p>
         <br>
         <p>点数：{{values.content.point}}点</p>
@@ -137,9 +137,12 @@ h2{
   text-align:center;
   display: block;
 }
-.path p{
-  text-align: left;
+.datacontent{
+ 
   display: inline-block;
+}
+.datacontent p{
+  text-align: left;
 }
 
 </style>
