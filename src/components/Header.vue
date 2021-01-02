@@ -63,14 +63,14 @@ p{
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 0 auto;
 }
 .headerauth{
   height:130px
 }
 p:hover{
-text-decoration: none;
+text-decoration: underline;
 font-weight: bold;
 }
 #overlay {
