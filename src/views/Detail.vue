@@ -125,7 +125,7 @@ h2{
 }
 .textcontent{
   border: 1px solid blueviolet;
-  width: 30%;
+  width: 50%;
 }
 .number{
   width: 30px;
@@ -139,7 +139,7 @@ h2{
 }
 .datacontent{
  
-  display: inline-block;
+  display: block;
 }
 .datacontent p{
   text-align: left;

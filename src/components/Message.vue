@@ -107,6 +107,7 @@ p{
 .content li{
   
   display: inline-block;
+  list-style-type: circle;
 }
 .content ol li p{
   text-align: left;
