@@ -125,7 +125,7 @@ h2{
 }
 .textcontent{
   border: 1px solid blueviolet;
-  width: 50%;
+  width: 30%;
 }
 .number{
   width: 30px;
@@ -140,6 +140,8 @@ h2{
 .datacontent{
  
   display: block;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .datacontent p{
   text-align: left;

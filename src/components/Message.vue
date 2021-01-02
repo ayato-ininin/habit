@@ -89,10 +89,11 @@ button:hover{
   
 }
 
-.inside{
+.inside ol li{
   list-style-position: inside;
   list-style-type: circle;
 }
+
 .register{
   color: aquamarine;
   margin-top: 5px;
