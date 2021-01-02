@@ -6,6 +6,7 @@ import Main from '../views/Main.vue'
 import store from "../store/index"
 import Total from '../views/Total.vue'
 import Detail from '../views/Detail.vue'
+import Profile from '../views/Profile.vue'
 
 Vue.use(VueRouter)
 

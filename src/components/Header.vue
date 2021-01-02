@@ -60,7 +60,7 @@ p{
   cursor: pointer;
   color:#4169e1;
   line-height: 130px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 10px;
   text-decoration: none;
