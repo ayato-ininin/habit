@@ -58,7 +58,7 @@ h1{
 }
 p{
   cursor: pointer;
-  color: #ffebcd;
+  color: #add8e6;
   line-height: 130px;
   font-size: 20px;
   font-weight: bold;

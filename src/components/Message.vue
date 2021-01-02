@@ -1,6 +1,6 @@
 <template>
 <div class="message">
-
+    <h1>{{habits.name}}さんようこそ！</h1>
   <div v-for="(value,index) in habits" :key="index">
       <div class="content">
        
@@ -115,6 +115,9 @@ p{
 }
 .message{
   text-align: center;
+}
+h1{
+  font-size: 30px;
 }
 
 </style>
