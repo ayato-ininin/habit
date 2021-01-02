@@ -78,7 +78,7 @@ export default {
       const habit = await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       console.log(habit);
         // eslint-disable-line no-console
-        for(let i=0 ; i<habit.data.content.data.data.length; i++){
+        for(let i=0 ; i<habit.data.content.content.length; i++){
           let contena=habit.data.content.data[i];
           data2.push(contena.data)
         }
