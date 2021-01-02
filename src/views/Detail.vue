@@ -37,7 +37,7 @@ export default {
     return{
       contain:"",
       point:"",
-      data:[],
+      data:"",
       habits:[],
     }
   },
@@ -74,17 +74,10 @@ export default {
       });
     },
     async reload(){
-      let data2=[];
-      const habit = await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
-      console.log(habit);
-        // eslint-disable-line no-console
-        for(let i=0 ; i<habit.data.content.data.data.length; i++){
-          let contena=habit.data.content.data[i];
-          data2.push(contena.data)
-        }
-        this.data=data2;
-        console.log(this.data);
-        // eslint-disable-line no-console
+      await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+      .then((response)=>{
+        this.data=response.data.content;
+      });
       
     },
   },
