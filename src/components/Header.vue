@@ -39,7 +39,7 @@ export default {
    },
   data(){
     return{
-      show:true
+      show:false
     };
   }
 }
@@ -58,7 +58,7 @@ h1{
 }
 p{
   cursor: pointer;
-  color: white;
+  color: #ffebcd;
   line-height: 130px;
   font-size: 20px;
   font-weight: bold;
@@ -95,7 +95,7 @@ color: blue;
 h3{
   font-size: 20px;
 }
-.contents button{
+#contents button{
   cursor: pointer;
   text-align: center;
 }
