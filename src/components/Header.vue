@@ -15,7 +15,7 @@
              <button @click="closemodal">習慣登録へ</button>
            </div>
          </div>
-
+          <p @click="$router.push('/profile')">プロフィール</p>
           <p @click="$router.push('/main')">追加画面へ</p>
          <p @click="logout">logout</p>
          
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 h1{
   font-size: 90px;
-  color: blue;
+  color: #4169e1;
   line-height: 130px;
   margin-left: 15px;
 }
@@ -58,7 +58,7 @@ h1{
 }
 p{
   cursor: pointer;
-  color:blue;
+  color:#4169e1;
   line-height: 130px;
   font-size: 20px;
   font-weight: bold;
