@@ -100,7 +100,11 @@ button:hover{
 p{
   font-size: 20px;
 }
-.content p li button{
+.content li{
+  text-align: left;
+  display: inline-block;
+}
+.content p{
   text-align: left;
   display: inline-block;
 }

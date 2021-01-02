@@ -132,7 +132,12 @@ h2{
   text-align: center;
 }
 .path{
+  text-align:center;
+  display: block;
+}
+.path p{
   text-align: left;
+  display: inline-block;
 }
 
 </style>
