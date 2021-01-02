@@ -1,6 +1,6 @@
 <template>
 <div class="message">
-    <h1>{{habits.data[1].name}}さんようこそ！</h1>
+    <h1>{{haby.name}}さんようこそ！</h1>
     <h2>☆チェックしよう！</h2>
     <AddMaster></AddMaster>
   <div v-for="(value,index) in habits" :key="index">
@@ -31,6 +31,7 @@ export default {
   data(){
     return{
       habits:[],
+      haby:"",
     };
   },
   components:{
@@ -41,6 +42,7 @@ export default {
       axios.delete("https://fathomless-springs-88074.herokuapp.com/api/habits/" + this.habits[index].item.id)
       .then((response)=>{
         console.log(response);
+        this.haby=response;
         // eslint-disable-line no-console
         this.$router.go({
           path:this.$router.currentRoute.path,
