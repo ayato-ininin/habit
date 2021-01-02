@@ -9,7 +9,7 @@
       <br>
       <p>今日もお疲れさまです！</p>
       <br><br>
-      <input type="number" v-model="point" placeholder="今日の点数" class="number">/100
+      <input type="number" v-model="point" placeholder="点" class="number">/100
       <br><br>
       <textarea v-model="contain" placeholder="今日の一言メモ..."></textarea>
     </div>
@@ -123,9 +123,12 @@ h2{
 }
 .textcontent{
   border: 1px solid blueviolet;
-  width: auto;
+  width: 30%;
 }
 .number{
   width: 30px;
+}
+.path{
+  text-align: center;
 }
 </style>

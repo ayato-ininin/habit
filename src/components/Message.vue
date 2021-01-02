@@ -81,6 +81,7 @@ button:hover{
 }
 .content{
   text-align: left;
+  margin: 0 auto;
   
 }
 
@@ -92,6 +93,9 @@ button:hover{
   color: aquamarine;
   margin-top: 5px;
   cursor: pointer;
+}
+.register:hover{
+  text-decoration: underline;
 }
 p{
   font-size: 20px;
