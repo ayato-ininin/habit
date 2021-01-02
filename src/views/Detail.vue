@@ -16,7 +16,7 @@
     <div class="path">
       <div v-for="(values,index) in data" :key="index">
         <p>{{values.content.point}}</p>
-        <p>{{value.content.contain}}</p>
+        <p>{{values.content.contain}}</p>
       </div>
       
     </div>
