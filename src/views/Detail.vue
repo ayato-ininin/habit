@@ -11,7 +11,7 @@
 
     <br><br><br>
 
-    <button @click="send({id})">保存</button>
+    <button @click="send">保存</button>
 
     <div class="path">
       <div v-for="(values,index) in data" :key="index">
@@ -54,10 +54,10 @@ export default {
       // eslint-disable-line no-console
 
     },
-    send(id){
+    send(){
       axios.post("https://fathomless-springs-88074.herokuapp.com/api/contain",{
-        habit_id:[id],
-        user_id:this.$store.user.id,
+        habit_id:this.id,
+        user_id:this.$store.state.user.id,
         contain:this.contain,
         point:this.point
       })
