@@ -81,7 +81,7 @@ button:hover{
 }
 .content{
   text-align: left;
-  margin-left: 100vw;
+  margin-left: 100px;
 }
 
 .inside{
