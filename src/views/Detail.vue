@@ -28,7 +28,6 @@ import DesignCss2 from '../components/DesignCss2';
 import axios from "axios";
 
 export default {
-  props:["id"],
   components:{
     DesignCss2
    
@@ -38,7 +37,8 @@ export default {
       contain:"",
       point:"",
       data:"",
-      habits:[]
+      habits:[],
+      id:""
     }
   },
   methods:{
@@ -50,6 +50,7 @@ export default {
         data.push(response.data);
       });
       this.habits=data;
+      this.id=data.item.id;
       console.log(this.habits);
       // eslint-disable-line no-console
 
