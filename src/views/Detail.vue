@@ -4,14 +4,18 @@
     <Header></Header>
     <br><br>
     <div id="element">
-      <p v-for="(items,index) in habits" :key="index">{{items.item.habit}}</p>
-      <input type="number" v-model="point">/100
-      <textarea v-model="contain"></textarea>
+      <h2 v-for="(items,index) in habits" :key="index">☆{{items.item.habit}}</h2>
+      <br>
+      <p>今日もお疲れさまです！</p>
+      <input type="number" v-model="point" placeholder="今日の点数">/100
+      <br>
+      <textarea v-model="contain" placeholder="今日の一言メモ..."></textarea>
     </div>
 
     <br><br><br>
 
     <button @click="send">保存</button>
+    <br><br>
 
     <div class="path">
       <div v-for="(values,index) in data" :key="index">
@@ -100,5 +104,12 @@ button:hover{
   background-color:#afeeee ;
   color: white;
   border: none;
+}
+textarea{
+  height: 50px;
+  width: 100px;
+}
+h2{
+  font-size: 30px;
 }
 </style>

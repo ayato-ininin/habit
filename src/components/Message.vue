@@ -68,7 +68,7 @@ export default {
 
 button{
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 button:hover{
   background-color:#afeeee ;
@@ -81,7 +81,7 @@ button:hover{
 }
 .content{
   text-align: left;
-  margin: 0 auto;
+  margin-left: 100vw;
 }
 
 .inside{
@@ -91,5 +91,6 @@ button:hover{
 .register{
   color: aquamarine;
   margin-top: 5px;
+  cursor: pointer;
 }
 </style>

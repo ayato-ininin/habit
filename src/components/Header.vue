@@ -42,9 +42,14 @@ p{
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
+  text-decoration: underline;
 }
 .headerauth{
   height:130px
+}
+p:hover{
+text-decoration: none;
+color: blue;
 }
 
 </style>
