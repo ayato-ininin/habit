@@ -77,7 +77,7 @@ export default {
       let data2=[];
       const habit = await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       
-        for(let i=0 ; i<habit.data[0].content.data.data.length; i++){
+        for(let i=0 ; i<habit.data[0].content.data.length; i++){
           let contena=habit.data[0].content.data[i];
           data2.push(contena.data)
         }
