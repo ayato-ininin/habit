@@ -79,7 +79,7 @@ export default {
       
         for(let i=0 ; i<habit.data.content.data.length; i++){
           let contena=habit.data.content.data[i];
-          data.push(contena.data)
+          data2.push(contena.data)
         }
         this.data=data2;
         console.log(this.data);
