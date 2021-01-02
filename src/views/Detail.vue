@@ -28,6 +28,7 @@ import DesignCss2 from '../components/DesignCss2';
 import axios from "axios";
 
 export default {
+  props:["id"],
   components:{
     DesignCss2
    
@@ -38,7 +39,7 @@ export default {
       point:"",
       data:"",
       habits:[],
-      id:""
+      user:""
     }
   },
   methods:{
@@ -50,14 +51,14 @@ export default {
         data.push(response.data);
       });
       this.habits=data;
-      this.id=data.item.id;
+      this.user=data.item.id
       console.log(this.habits);
       // eslint-disable-line no-console
 
     },
     send(){
       axios.post("https://fathomless-springs-88074.herokuapp.com/api/contain",{
-        habit_id:this.id,
+        habit_id:this.user,
         user_id:this.$store.user.id,
         contain:this.contain,
         point:this.point
@@ -75,7 +76,7 @@ export default {
       });
     },
     async reload(){
-      await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+      await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.user)
       .then((response)=>{
         this.data=response.data.content.content;
         console.log(this.data);
