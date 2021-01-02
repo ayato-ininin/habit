@@ -102,7 +102,7 @@ button:hover{
 }
 
 .register{
-  color: aquamarine;
+  color: #00ff00;
   margin-top: 5px;
   cursor: pointer;
 }

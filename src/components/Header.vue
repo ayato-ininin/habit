@@ -5,7 +5,7 @@
         <h1>HABITY</h1>
        </div>
        <div class="right-header flex">
-         <p @click="openmodal">概要</p>
+         <p @click="openmodal">アプリ概要</p>
 
          <div id="overlay" v-if="show">
            <div id="contents">
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 h1{
   font-size: 90px;
-  color: #add8e6;
+  color: blue;
   line-height: 130px;
   margin-left: 15px;
 }
@@ -71,7 +71,7 @@ p{
 }
 p:hover{
 text-decoration: none;
-color: blue;
+font-weight: bold;
 }
 #overlay {
   z-index: 1;
