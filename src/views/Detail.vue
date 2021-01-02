@@ -14,11 +14,9 @@
     <button @click="send">保存</button>
 
     <div class="path">
-      <div v-for="(values,index) in data2" :key="index">
-        <p>{{values.content.content.point}}</p>
-      </div>
-      <div v-for="(value,index) in data" :key="index">
-        <p>{{value.content.content.contain}}</p>
+      <div v-for="(values,index) in data" :key="index">
+        <p>{{values.content.point}}</p>
+        <p>{{value.content.contain}}</p>
       </div>
       
     </div>
@@ -40,7 +38,6 @@ export default {
       contain:"",
       point:"",
       data:"",
-      data2:"",
       habits:[]
     }
   },
@@ -67,6 +64,7 @@ export default {
       .then((response)=>{
         console.log(response);
         // eslint-disable-line no-console
+        alert("保存しました");
         this.contain="";
         this.number="";
         this.$router.go({
@@ -75,11 +73,10 @@ export default {
         });
       });
     },
-    reload(){
-      axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
+    async reload(){
+      await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       .then((response)=>{
-        this.data=response.data.content;
-        this.data2=response.data.point;
+        this.data=response.data.content.content;
         console.log(this.data);
         // eslint-disable-line no-console
       });
