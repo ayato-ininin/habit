@@ -1,6 +1,6 @@
 <template>
 <div class="message">
-    <h1>{{habits.data[0].name}}さんようこそ！</h1>
+    <h1>{{habits.array[0].name}}さんようこそ！</h1>
     <h2>☆チェックしよう！</h2>
     <AddMaster></AddMaster>
   <div v-for="(value,index) in habits" :key="index">
