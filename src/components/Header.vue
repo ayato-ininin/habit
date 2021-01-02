@@ -9,7 +9,7 @@
 
          <div id="overlay" v-if="show">
            <div id="contents">
-             <p>説明</p>
+             <h3>あああああああああああ<br>あああああああああああああああ<br>ああああああああああああああ</h3>
              <button @click="closemodal">閉じる</button>
            </div>
          </div>

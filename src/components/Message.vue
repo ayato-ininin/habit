@@ -1,10 +1,9 @@
 <template>
 <div class="message">
+
   <div v-for="(value,index) in habits" :key="index">
       <div class="content">
-        <h1>
-          ☆毎日できる習慣に！
-        </h1>
+       
         <ol class="inside">
           <li>
             <p class="main">
@@ -70,9 +69,7 @@ export default {
 </script>
 
 <style scoped>
-h1{
-  font-size: 20px;
-}
+
 button{
   cursor: pointer;
   margin-left: 15px;
@@ -116,6 +113,8 @@ p{
 .content ol li p{
   text-align: left;
 }
-
+.message{
+  text-align: center;
+}
 
 </style>
