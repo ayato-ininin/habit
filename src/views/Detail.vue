@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <DesignCss2></DesignCss2>
-    <h1>HABITY</h1>
+    <Header></Header>
     <br><br>
     <div id="element">
       <p v-for="(items,index) in habits" :key="index">{{items.item.habit}}</p>
@@ -27,11 +27,13 @@
 <script>
 import DesignCss2 from '../components/DesignCss2';
 import axios from "axios";
+import Header from '../components/Header'
 
 export default {
   props:["id"],
   components:{
-    DesignCss2
+    DesignCss2,
+    Header
    
   },
   data(){
@@ -90,12 +92,7 @@ export default {
 </script>
 
 <style scoped>
-h1{
-  font-size: 90px;
-  color: #add8e6;
-  line-height: 130px;
-  margin-left: 15px;
-}
+
 button{
   cursor: pointer;
 }

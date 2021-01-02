@@ -39,7 +39,7 @@ p{
   cursor: pointer;
   color: white;
   line-height: 130px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin-right: 15px;
 }
