@@ -1,13 +1,13 @@
 <template>
   <div class="habit">
     <DesignCss2></DesignCss2>
+    <Header></Header>
+    <br><br>
     <AddMaster></AddMaster>
     <br>
   <Message></Message>
 
-    <div class="logout">
-      <button @click="logout">logout</button>
-    </div>
+
 
   </div>
 </template>
@@ -16,21 +16,18 @@
 import AddMaster from '../components/AddMaster.vue';
 import DesignCss2 from '../components/DesignCss2'
 import Message from '../components/Message'
+import Header from '../components/Header'
 
 export default {
   components:{
     AddMaster,
     DesignCss2,
-    Message
+    Message,
+    Header
   },
   
   
-  methods:{
-    logout(){
-      this.$store.dispatch('logout')
-    },
-    
-}
+  
 }
 </script>
 

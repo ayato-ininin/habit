@@ -1,8 +1,6 @@
 <template>
 <div id="add">
-  <div class="title">
-  <h1>HABITY</h1>
-  </div>
+
   <br>
   <div class="total">
     <p @click="$router.push('/total')">一覧へ</p>

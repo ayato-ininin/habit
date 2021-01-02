@@ -1,6 +1,6 @@
 <template>
   <div id="total">
-    <h1>Habity</h1>
+    <h1>工事中</h1>
   </div>
 </template>
 
