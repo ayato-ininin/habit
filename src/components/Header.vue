@@ -5,7 +5,15 @@
         <h1>HABITY</h1>
        </div>
        <div class="right-header flex">
-         <p @click="$router.push('/total')">概要</p>
+         <p @click="openmodal">概要</p>
+
+         <div id="overlay" v-if="show">
+           <div id="contents">
+             <p>説明</p>
+             <button @click="closemodal">閉じる</button>
+           </div>
+         </div>
+
           <p @click="$router.push('/main')">追加画面へ</p>
          <p @click="logout">logout</p>
          
@@ -20,6 +28,17 @@ export default {
     logout(){
       this.$store.dispatch('logout')
     },
+    openmodal(){
+      this.show=true;
+    },
+    closemodal(){
+      this.show=false;
+    } 
+   },
+  data(){
+    return{
+      show:false
+    };
   }
 }
 </script>
@@ -52,5 +71,23 @@ p:hover{
 text-decoration: none;
 color: blue;
 }
-
+#overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content {
+  text-align: center;
+  z-index: 2;
+  width: 30%;
+  padding: 10px;
+  background: #fff;
+}
 </style>
