@@ -5,11 +5,11 @@
     <br><br>
   <div class="center">
     <div id="element">
-      <h2 v-for="(items,index) in habits" :key="index">・{{items.item.habit}}</h2>
+      <h2 v-for="(items,index) in habits" :key="index">{{items.item.habit}}</h2>
       <br>
       <p>今日もお疲れさまです！</p>
       <br><br>
-      <input type="number" v-model="point" placeholder="今日の点数">/100
+      <input type="number" v-model="point" placeholder="今日の点数" class="number">/100
       <br><br>
       <textarea v-model="contain" placeholder="今日の一言メモ..."></textarea>
     </div>
@@ -21,9 +21,11 @@
 
     <div class="path">
       <div v-for="(values,index) in data" :key="index">
+        <p>日付/時間：{{values.content.created_at}}</p>
         <p>点数：{{values.content.point}}点</p>
         <p class="textcontent">メモ：{{values.content.contain}}</p>
-        <p>日付・時間{{values.content.created_at}}</p>
+        <br><br>
+        
       </div>
       
     </div>
@@ -114,11 +116,16 @@ textarea{
 }
 h2{
   font-size: 30px;
+  text-decoration: underline;
 }
 .center{
   text-align: center;
 }
 .textcontent{
   border: 1px solid blueviolet;
+  width: auto;
+}
+.number{
+  width: 30px;
 }
 </style>

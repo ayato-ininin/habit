@@ -97,6 +97,6 @@ p{
   font-size: 20px;
 }
 .message{
-  text-align: center;
+  margin: 0 auto;
 }
 </style>
