@@ -4,8 +4,12 @@
       <div class="content">
         
         <ol class="inside">
-          <li>{{value.item.habit}}
+          <li>
+            <p class="main">
+            {{value.item.habit}}
+            </p>
             <button @click="del(index)">削除</button> 
+            <br>
             <p class="register" @click="$router.push({
             path:'/detail/' +value.item.id,
              params:{id:value.item.id},
@@ -100,13 +104,10 @@ button:hover{
 p{
   font-size: 20px;
 }
-.content li{
-  text-align: left;
-  display: inline-block;
-}
 .content p{
   text-align: left;
   display: inline-block;
 }
+
 
 </style>
