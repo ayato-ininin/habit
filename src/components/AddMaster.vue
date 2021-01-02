@@ -6,7 +6,7 @@
     <p @click="$router.push('/total')">一覧へ</p>
   </div>
   <div class="content">
-    <input type="text" v-model="common">
+    <input type="text" v-model="common" placeholder="習慣を入力">
     <button @click="send">習慣を追加</button>
     </div>
 </div>

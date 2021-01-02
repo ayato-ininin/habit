@@ -39,9 +39,9 @@ p{
   cursor: pointer;
   color: white;
   line-height: 130px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .headerauth{
   height:130px

@@ -6,10 +6,10 @@
         <ol class="inside">
           <li>{{value.item.habit}}
             <button @click="del(index)">削除</button> 
-            <p @click="$router.push({
+            <p class="register" @click="$router.push({
             path:'/detail/' +value.item.id,
              params:{id:value.item.id},
-             })">記録</p>      
+             })">今日の記録へ▷</p>      
           </li>
         </ol>
       </div>
@@ -68,6 +68,7 @@ export default {
 
 button{
   cursor: pointer;
+  margin-left: 10px;
 }
 button:hover{
   background-color:#afeeee ;
@@ -79,14 +80,16 @@ button:hover{
   margin: 20px 10px;
 }
 .content{
-  text-align: center;
+  text-align: left;
+  margin: 0 auto;
 }
-.logout{
-  text-align: center;
-  margin-top: 20px;
-}
+
 .inside{
   list-style-position: inside;
   list-style-type: circle;
+}
+.register{
+  color: aquamarine;
+  margin-top: 5px;
 }
 </style>
