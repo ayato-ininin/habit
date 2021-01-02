@@ -17,6 +17,7 @@
       <div v-for="(values,index) in data" :key="index">
         <p>{{values.content.point}}</p>
         <p>{{values.content.contain}}</p>
+        <p>{{values.content.created_at}}</p>
       </div>
       
     </div>
