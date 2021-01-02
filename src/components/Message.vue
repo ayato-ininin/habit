@@ -80,8 +80,8 @@ button:hover{
   margin: 20px 10px;
 }
 .content{
-  text-align: left;
-  margin: 0 auto;
+  text-align: center;
+  display: block;
   
 }
 
@@ -100,7 +100,9 @@ button:hover{
 p{
   font-size: 20px;
 }
-.message{
-  margin: 0 auto;
+.content p li button{
+  text-align: left;
+  display: inline-block;
 }
+
 </style>

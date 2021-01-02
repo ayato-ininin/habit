@@ -128,7 +128,11 @@ h2{
 .number{
   width: 30px;
 }
-.path{
+.detail{
   text-align: center;
 }
+.path{
+  text-align: left;
+}
+
 </style>
