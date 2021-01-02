@@ -3,24 +3,22 @@
     <DesignCss2></DesignCss2>
     <Header></Header>
     <br><br>
-    <AddMaster></AddMaster>
+     <Message></Message>
     <br>
-  <Message></Message>
 
+ 
 
 
   </div>
 </template>
 
 <script>
-import AddMaster from '../components/AddMaster.vue';
 import DesignCss2 from '../components/DesignCss2'
 import Message from '../components/Message'
 import Header from '../components/Header'
 
 export default {
   components:{
-    AddMaster,
     DesignCss2,
     Message,
     Header

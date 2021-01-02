@@ -9,7 +9,7 @@
     <input type="text" v-model="common" placeholder="習慣を入力">
     <button @click="send">習慣を追加</button>
     <br>
-    <h2>☆チェックしよう！</h2>
+    
     </div>
 </div>
 </template>
@@ -69,7 +69,5 @@ button:hover{
   text-align: center;
   margin: 10px 0;
 }
-h2{
-  font-size: 20px;
-}
+
 </style>

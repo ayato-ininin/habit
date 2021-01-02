@@ -1,6 +1,8 @@
 <template>
 <div class="message">
-    <h1>{{habits.name}}さんようこそ！</h1>
+    <h1>{{habits.data[0].name}}さんようこそ！</h1>
+    <h2>☆チェックしよう！</h2>
+    <AddMaster></AddMaster>
   <div v-for="(value,index) in habits" :key="index">
       <div class="content">
        
@@ -24,11 +26,15 @@
 
 <script>
 import axios from "axios";
+import AddMaster from '../components/AddMaster.vue';
 export default {
   data(){
     return{
       habits:[],
     };
+  },
+  components:{
+    AddMaster,
   },
   methods:{
     del(index){
@@ -119,5 +125,7 @@ p{
 h1{
   font-size: 30px;
 }
-
+h2{
+  font-size: 20px;
+}
 </style>
