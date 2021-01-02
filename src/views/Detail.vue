@@ -37,7 +37,7 @@ export default {
     return{
       contain:"",
       point:"",
-      data:"",
+      data:[],
       habits:[],
     }
   },
@@ -76,7 +76,11 @@ export default {
     async reload(){
       await axios.get("https://fathomless-springs-88074.herokuapp.com/api/habits/" +this.id)
       .then((response)=>{
-        this.data=response.data.content.content;
+        $respon=response.data.content;
+        for (let i=0; i<$respon.content.content.length; i++){
+          $contena=$respon.content.data[i];
+          data.push($contena);
+        }
         console.log(this.data);
         // eslint-disable-line no-console
       });
