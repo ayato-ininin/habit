@@ -37,6 +37,13 @@ export default {
             name:this.name,
           });
           console.log(response);
+          alert("変更が完了しました");
+          this.name="";
+        this.$router.go({
+          path:this.$router.currentRoute.path,
+          force:true,
+        });
+        this.$router.push('/main');
         })
       }
     },
