@@ -43,7 +43,13 @@ export default {
           path:this.$router.currentRoute.path,
           force:true,
         });
-        this.$router.push('/main');
+        if(this.$router.go({
+          path:this.$router.currentRoute.path,
+          force:true,
+        })){
+          this.$router.push('/main');
+        }
+        
         })
       }
     },
@@ -62,5 +68,9 @@ button:hover{
   background-color:#afeeee ;
   color: white;
   border: none;
+}
+.profile{
+  text-align: center;
+  align-items: center;
 }
 </style>
