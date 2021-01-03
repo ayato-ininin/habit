@@ -11,6 +11,8 @@
             <p class="main">
             {{value.item.habit}}
             </p>
+            <input type="text" v-model="newhabit" placeholder="更新内容">
+            <button @click="updt(index)">更新</button>
             <button @click="del(index)">削除</button> 
             <br>
             <p class="register" @click="$router.push({
@@ -31,6 +33,7 @@ export default {
   data(){
     return{
       habits:[],
+      newhabit:"",
     };
   },
   components:{
@@ -42,6 +45,19 @@ export default {
       .then((response)=>{
         console.log(response);
       
+        // eslint-disable-line no-console
+        this.$router.go({
+          path:this.$router.currentRoute.path,
+          force:true,
+        });
+      });
+    },
+    updt(index){
+      axios.update("https://fathomless-springs-88074.herokuapp.com/api/habits/" + this.habits[index].item.id,{
+        habit:this.newhabit
+      })
+      .then((response)=>{
+        console.log(response);
         // eslint-disable-line no-console
         this.$router.go({
           path:this.$router.currentRoute.path,
