@@ -53,7 +53,7 @@ export default {
       });
     },
     updt(index){
-      axios.update("https://fathomless-springs-88074.herokuapp.com/api/habits/" + this.habits[index].item.id,{
+      axios.put("https://fathomless-springs-88074.herokuapp.com/api/habits/" + this.habits[index].item.id,{
         habit:this.newhabit
       })
       .then((response)=>{
