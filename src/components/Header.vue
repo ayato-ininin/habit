@@ -15,7 +15,7 @@
              <button @click="closemodal">習慣登録へ</button>
            </div>
          </div>
-          <p @click="$router.push('/profile')">プロフィール</p>
+          <p @click="$router.push('/profile')">プロフィール変更</p>
           <p @click="$router.push('/main')">追加画面へ</p>
          <p @click="logout">logout</p>
          

@@ -22,6 +22,9 @@ export default new Vuex.Store({
     logout(state, payload) {
       state.auth = payload;
     },
+    changeUserData(state, payload) {
+      state.user.name = payload;
+    }
   },
   actions: {
     async login({ commit }, { name, password }) {
@@ -62,7 +65,10 @@ export default new Vuex.Store({
           // eslint-disable-next-line no-console
           console.log(error);
         });
-    }
+    },
+    changeUserData({ commit }, { name }) {
+      commit("changeUserData", name);
+    },
   },
   modules: {
   }
