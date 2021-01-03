@@ -29,7 +29,7 @@ export default {
       if(this.name === ""){
         alert("変更内容を入力してください");
       }else{
-        await axios.put('https://fathomless-springs-88074.herokuapp.com/api/users',{
+        await axios.put('https://fathomless-springs-88074.herokuapp.com/api/user',{
           name:this.name,
           email:this.$store.state.user.email
         }).then((response)=>{
