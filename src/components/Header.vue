@@ -175,7 +175,7 @@ h3{
   }
   .header__menu__line{
       opacity: 0.6;
-      transform: skew(70deg);
+      transform: skew(120deg);
     }
   .menu-content {
     display: block;
@@ -195,8 +195,7 @@ h3{
 
   .menu-content li a {
     margin: 20px;
-    padding: 30px;
-   text-align: center;
+    padding: 20px;
     cursor: pointer;
     text-decoration: none;
     display: block;
@@ -212,8 +211,9 @@ h3{
     text-align: center;
     
   }
-  .menu-content_inner{
+  .menu-content ul{
      align-content: space-around;
+     text-align: center;
   }
   .menu-content_inner a{
     padding: 20px 20px 20px 20px;
