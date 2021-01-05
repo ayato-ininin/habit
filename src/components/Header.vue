@@ -151,10 +151,10 @@ h3{
   }
   #hamburger span{
     position: absolute;
-    left: 9px;
+    left: 8px;
     top:12px;
     display: block;
-    width: 25px;
+    width: 23px;
     height: 2px;
     background-color:white;
     transition: 0.8s;

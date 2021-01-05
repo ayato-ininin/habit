@@ -37,10 +37,10 @@ p{
 
 @media screen and (max-width: 768px){
   h1{
-    font-size: 20px;
+    font-size: 40px;
   }
   p{
-    font-size: 10px;
+    font-size: 25px;
   }
 }
 
