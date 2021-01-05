@@ -1,9 +1,12 @@
 <template>
-<div class="message">
-    <h1>{{this.$store.state.user.name}}さんようこそ！</h1>
-    <h2>☆チェックしよう！</h2>
-    <AddMaster></AddMaster>
-  <div v-for="(value,index) in habits" :key="index">
+<div>
+  <Loading v-show="loading"></Loading>
+  <v-app>
+    <div class="message" v-show="!loading">
+      <h1>{{this.$store.state.user.name}}さんようこそ！</h1>
+      <h2>☆チェックしよう！</h2>
+      <AddMaster></AddMaster>
+     <div v-for="(value,index) in habits" :key="index">
       <div class="content">
        
         <ol class="inside">
@@ -24,20 +27,25 @@
       </div>
 
     </div>
+    </v-app>
+</div>
 </template>
 
 <script>
 import axios from "axios";
 import AddMaster from '../components/AddMaster.vue';
+import Loading from '../components/Loading'
 export default {
   data(){
     return{
       habits:[],
       newhabit:"",
+      Loading:true
     };
   },
   components:{
     AddMaster,
+    Loading
   },
   methods:{
     del(index){
@@ -86,6 +94,11 @@ export default {
   ,
   created(){
     this.gethabits();
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
   },
   
 }

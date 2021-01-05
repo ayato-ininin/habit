@@ -61,6 +61,7 @@ export default {
       point:"",
       data:"",
       habits:[],
+      loading:true
     }
   },
   methods:{
