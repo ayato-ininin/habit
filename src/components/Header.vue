@@ -21,7 +21,7 @@
          
        </div>
 <!-- ハンバーガーメニュー -->
-       <div id="hamburger" @click="hamburger" :class="{active:isclass}">
+       <div id="hamburger" @click="hamburger" :class="{'active':isclass}">
          
       <span class="header__menu__line"></span>
       <span class="header__menu__line"></span>
@@ -148,6 +148,7 @@ h3{
     top: 15px;
     right: 20px;
     transition: 0.4s;
+    background-color: white;
   }
   #hamburger span{
     position: absolute;
@@ -155,7 +156,7 @@ h3{
     display: block;
     width: 35px;
     height: 2px;
-    background-color: fff;
+    background-color: black;
     transition: 0.8s;
   }
     #hamburger span:nth-of-type(1) {
