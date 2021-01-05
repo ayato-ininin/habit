@@ -97,7 +97,6 @@ export default {
     },
     async del(contentid){
       await axios.delete("https://fathomless-springs-88074.herokuapp.com/api/contain",{
-        habit_id:this.id,
         id:contentid
       })
       .then((response)=>{
