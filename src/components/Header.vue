@@ -168,7 +168,7 @@ h3{
     top: 30px;
   }
 
-  .contentnav{
+  .right-header{
     display: none;
   }
     #hamburger.active span:nth-of-type(1) {
