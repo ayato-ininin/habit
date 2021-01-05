@@ -27,7 +27,7 @@
         <br>
         <p class="textcontent">記録：{{values.content.contain}}</p>
         <br><br>
-        <button @click="del()">削除</button>
+        <button @click="del(values.content.id)">削除</button>
         
       </div>
       
@@ -95,9 +95,9 @@ export default {
       });
       
     },
-    async del(){
+    async del(contentid){
       await axios.delete("https://fathomless-springs-88074.herokuapp.com/api/contain",{
-        id:101
+        data:{id:contentid},
       })
       .then((response)=>{
       
