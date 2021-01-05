@@ -212,7 +212,7 @@ h3{
   }
   .menu-content_inner a{
     padding: 8px 8px 8px 8px;
-  border:1px solid white;
+  border:1px solid #2662d5;
   border-radius:10px;
   /* ボーダーにradiusで丸みをつける */
   transform:rotate(0deg) translate(0px,0px);
@@ -227,7 +227,7 @@ h3{
   .sidenavs h4 {
   margin:30px auto;
   width:250px;
-  border:1px solid white;
+  border:1px solid #2662d5;
   border-radius:10px;
   /* ボーダーにradiusで丸みをつける */
 }
