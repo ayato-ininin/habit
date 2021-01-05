@@ -102,6 +102,7 @@ export default {
       .then((response)=>{
         console.log(response);
         // eslint-disable-line no-console
+        alert('削除しました');
         this.$router.go({
           path:this.$router.currentRoute.path,
           force:true,
