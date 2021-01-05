@@ -97,9 +97,10 @@ export default {
     },
     async del(index){
       await axios.delete("https://fathomless-springs-88074.herokuapp.com/api/contain",{
-        id:this.data[index].content.id
+        id:this.data.data[index].content.id
       })
       .then((response)=>{
+        console.log(this.data);
         console.log(response);
        
         // eslint-disable-line no-console
