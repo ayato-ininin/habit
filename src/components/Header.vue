@@ -173,7 +173,7 @@ h3{
   .right-header{
     display: none;
   }
-  #hamburger span{
+  #hamburger .header__menu__line{
       opacity: 0.6;
       transform: skew(90deg);
     }
@@ -189,7 +189,7 @@ h3{
     background: white;
     color: #333333;
     box-shadow: 90px 0 rgba(38, 98, 213, 0.3);
-    z-index: 999;
+    z-index: 50;
     overflow-x: hidden;
   }
 
