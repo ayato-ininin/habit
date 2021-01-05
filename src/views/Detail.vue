@@ -95,8 +95,8 @@ export default {
       });
       
     },
-    del(contentid){
-      axios.delete("https://fathomless-springs-88074.herokuapp.com/api/contain",{
+    async del(contentid){
+      await axios.delete("https://fathomless-springs-88074.herokuapp.com/api/contain",{
         habit_id:this.id,
         id:contentid
       })
