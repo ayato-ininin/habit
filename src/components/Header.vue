@@ -135,9 +135,12 @@ h3{
 
 /* ハンバーガー用 */
 @media screen and (max-width: 768px){
+  h1{
+    font-size: 50px;
+  }
   #hamburger{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     cursor: pointer;
     z-index: 100;

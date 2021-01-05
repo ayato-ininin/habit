@@ -35,4 +35,13 @@ p{
   height:130px
 }
 
+@media screen and (max-width: 370px){
+  h1{
+    font-size: 20px;
+  }
+  p{
+    font-size: 5px;
+  }
+}
+
 </style>
