@@ -47,7 +47,6 @@ import DesignCss2 from '../components/DesignCss2';
 import axios from "axios";
 import Header from '../components/Header'
 import Loading from '../components/Loading.vue';
-import Loading from '../components/Loading'
 export default {
   props:["id"],
   components:{
