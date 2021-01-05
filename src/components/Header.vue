@@ -30,21 +30,18 @@
      <div class="contentnav">
      <nav class="menu-content" :class="{'open':isclass}" v-show="isclass">
       <ul class="menu-content_inner">
-        <li><span>
-          <h4><a @click="openmodal">アプリ概要</a></h4>
-           </span>
+        <li>
+          <a @click="openmodal">アプリ概要</a>
+           
         </li>
-        <li><span>
-          <h4><a @click="$router.push('/profile')">プロフィール変更</a></h4>
-           </span>
+        <li>
+          <a @click="$router.push('/profile')">プロフィール変更</a>
         </li>
-        <li><span>
-          <h4><a @click="$router.push('/main')">追加画面へ</a></h4>
-           </span>
+        <li>
+         <a @click="$router.push('/main')">追加画面へ</a>
         </li>
-        <li><span>
-          <h4><a @click="logout">ログアウト</a></h4>
-           </span>
+        <li>
+        <a @click="logout">ログアウト</a>
         </li>
       </ul>
     </nav>
@@ -173,7 +170,7 @@ h3{
   .right-header{
     display: none;
   }
-  #hamburger span{
+  #hamburger:hover span{
       opacity: 0.6;
       transform: skew(90deg);
     }
@@ -211,7 +208,15 @@ h3{
     text-align: center;
     
   }
-  .menu-content_inner li span{
+  .menu-content ul{
+     align-content: space-around;
+     text-align: center;
+  }
+  .menu-content_inner li{
+     align-content: space-around;
+     text-align: center;
+  }
+  .menu-content_inner a{
      align-content: space-around;
      text-align: center;
   }
@@ -229,13 +234,7 @@ h3{
   /* Z軸(平面)の回転角度とXY軸の移動距離を指定 */
    color: #2662d5;
   }
-  .sidenavs h4 {
-  margin:0 auto;
-  width:200px;
-  border:1px solid #2662d5;
- 
-  /* ボーダーにradiusで丸みをつける */
-}
+  
   .menu-content.open {
     left: 0;
   }
