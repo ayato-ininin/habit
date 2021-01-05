@@ -65,7 +65,10 @@ export default {
     },
     closemodal(){
       this.show=false;
-    } 
+    } ,
+    hamburger(){
+      this.isclass= !this.isclass;
+    }
    },
   data(){
     return{
@@ -73,11 +76,7 @@ export default {
       isclass:false
     };
   },
-  methods:{
-    hamburger(){
-      this.isclass= !this.isclass;
-    }
-  }
+  
 };
 </script>
 
