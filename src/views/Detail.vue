@@ -21,11 +21,11 @@
 
     <div class="path">
       <div class="datacontent" v-for="(values,index) in data" :key="index">
-        <p>日付/時間：{{values.content.created_at}}</p>
+        <p>💫日付/時間：{{values.content.created_at}}</p>
         <br>
-        <p>点数：{{values.content.point}}点</p>
+        <p>💫点数：{{values.content.point}}点</p>
         <br>
-        <p class="textcontent">メモ：{{values.content.contain}}</p>
+        <p class="textcontent">記録：{{values.content.contain}}</p>
         <br><br>
         
       </div>
