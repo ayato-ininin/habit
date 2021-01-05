@@ -152,10 +152,10 @@ h3{
   #hamburger span{
     position: absolute;
     left: 8px;
-    top:18px;
+    top:12px;
     display: block;
-    width: 35px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color:white;
     transition: 0.8s;
     transform: skew(0deg);
