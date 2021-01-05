@@ -23,9 +23,9 @@
 <!-- ハンバーガーメニュー -->
        <div id="hamburger" @click="hamburger" :class="{'active':isclass}">
          
-      <span :class="{header__menu__line:isclass}"></span>
-      <span :class="{header__menu__line:isclass}"></span>
-      <span :class="{header__menu__line:isclass}"></span>
+      <span :class="{'header__menu__line':isclass}"></span>
+      <span :class="{'header__menu__line':isclass}"></span>
+      <span :class="{'header__menu__line':isclass}"></span>
        </div>
      <div class="contentnav">
      <nav class="menu-content" :class="{'open':isclass}" v-show="isclass">
@@ -194,15 +194,15 @@ h3{
   }
 
   .menu-content li a {
-    margin: 15px;
-    padding: 40px;
-
+    margin: 20px;
+    padding: 30px;
+   text-align: center;
     cursor: pointer;
-    border-bottom: 0.5px solid #2662d5;
     text-decoration: none;
     display: block;
     color:  #87cefa;
     transition: 0.3s;
+     align-content: space-around;
   }
   .menu-content li a:hover{
     color: #2662d5;
