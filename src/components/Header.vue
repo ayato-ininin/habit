@@ -29,22 +29,21 @@
        </div>
      <div class="contentnav">
      <nav class="menu-content" :class="{'open':isclass}" v-show="isclass">
-         <h2 class="menu-title">Habity</h2>
-      <ul class="menu-content_innner">
+      <ul class="menu-content_inner">
         <li><span>
-          <h3 @click="openmodal">アプリ概要</h3>
+          <h4><a @click="openmodal">アプリ概要</a></h4>
            </span>
         </li>
         <li><span>
-          <h3 @click="$router.push('/profile')">プロフィール変更</h3>
+          <h4><a @click="$router.push('/profile')">プロフィール変更</a></h4>
            </span>
         </li>
         <li><span>
-          <h3 @click="$router.push('/main')">追加画面へ</h3>
+          <h4><a @click="$router.push('/main')">追加画面へ</a></h4>
            </span>
         </li>
         <li><span>
-          <a @click="logout">ログアウト</a>
+          <h4><a @click="logout">ログアウト</a></h4>
            </span>
         </li>
       </ul>
@@ -153,12 +152,13 @@ h3{
   #hamburger span{
     position: absolute;
     left: 8px;
-    top:8px;
+    top:12px;
     display: block;
     width: 35px;
     height: 3px;
     background-color:white;
     transition: 0.8s;
+    transform: skew(0deg);
   }
     #hamburger span:nth-of-type(1) {
     top: 10px;
@@ -173,17 +173,10 @@ h3{
   .right-header{
     display: none;
   }
-    #hamburger.active span:nth-of-type(1) {
-    top: 20px;
-    transform: rotate(45deg);
-  }
-#hamburger.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-  #hamburger.active span:nth-of-type(3) {
-    top: 20px;
-    transform: rotate(-45deg);
-  }
+    #hamburger.active{
+      opacity: 0.6;
+      transform: skew(70deg);
+    }
   .menu-content {
     display: block;
     width: calc(100% - 80px);
@@ -193,34 +186,51 @@ h3{
     position: fixed;
     top: 0;
     left: calc(-100% - 80px);
-    background: #fff;
+    background: white;
     color: #333333;
     box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
     z-index: 999;
+    overflow-x: hidden;
   }
-  .menu-content .menu-title {
-    margin: 40px 20px;
-    font-size: 20px;
-    color:  #2662d5;
-    text-align: left;
-    font-weight: bold;
-  }
-  .menu-content li h3 {
+
+  .menu-content li a {
     margin: 15px;
     padding: 5px;
     cursor: pointer;
     border-bottom: 0.5px solid #2662d5;
     text-decoration: none;
     display: block;
-    color:  #2662d5;
+    color:  #87cefa;
+    transition: 0.3s;
   }
-  .menu-content li h3:hover{
-    text-decoration: underline;
+  .menu-content li a:hover{
+    color: #2662d5;
   }
   .menu-content li {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
+  .menu-content_inner a{
+    padding: 8px 8px 8px 8px;
+  border:1px solid white;
+  border-radius:10px;
+  /* ボーダーにradiusで丸みをつける */
+  transform:rotate(0deg) translate(0px,0px);
+  /* Z軸(平面)の回転角度とXY軸の移動距離を指定 */
+
+  }
+  .menu-content_inner a:hover{
+    transform:rotate(-3deg) translate(3px,5px);
+  /* Z軸(平面)の回転角度とXY軸の移動距離を指定 */
+   color: #2662d5;
+  }
+  .sidenavs h4 {
+  margin:30px auto;
+  width:250px;
+  border:1px solid white;
+  border-radius:10px;
+  /* ボーダーにradiusで丸みをつける */
+}
   .menu-content.open {
     left: 0;
   }
