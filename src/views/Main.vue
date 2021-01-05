@@ -1,10 +1,13 @@
 <template>
   <div class="habit">
+    <v-app>
     <DesignCss2></DesignCss2>
     <Header></Header>
     <br><br>
-     <Message></Message>
+     <Message v-show="!loading"></Message>
+     <Loading v-show="loading"></Loading>
     <br>
+    </v-app>
 
  
 
@@ -16,12 +19,23 @@
 import DesignCss2 from '../components/DesignCss2'
 import Message from '../components/Message'
 import Header from '../components/Header'
-
+import Loading from '../components/Loading'
 export default {
   components:{
     DesignCss2,
     Message,
-    Header
+    Header,
+    Loading
+  },
+  data(){
+    return{
+      loading:true,
+    }
+  },
+    mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
   },
   
   
