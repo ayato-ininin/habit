@@ -100,7 +100,7 @@ export default {
         id:contentid
       })
       .then((response)=>{
-        console.log(response),
+        console.log(response);
         // eslint-disable-line no-console
         this.$router.go({
           path:this.$router.currentRoute.path,
