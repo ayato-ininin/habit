@@ -143,7 +143,7 @@ h3{
     height: 50px;
     position: absolute;
     cursor: pointer;
-    z-index: 50;
+    z-index: 100;
     top: 20px;
     right: 20px;
     transition: 0.4s;
@@ -173,7 +173,7 @@ h3{
   .right-header{
     display: none;
   }
-  #hamburger .header__menu__line{
+  #hamburger span{
       opacity: 0.6;
       transform: skew(90deg);
     }
@@ -189,7 +189,7 @@ h3{
     background: white;
     color: #333333;
     box-shadow: 90px 0 rgba(38, 98, 213, 0.3);
-    z-index: 50;
+    z-index: 999;
     overflow-x: hidden;
   }
 
@@ -211,15 +211,10 @@ h3{
     text-align: center;
     
   }
-  .menu-content_inner li span h4{
+  .menu-content_inner li span{
      align-content: space-around;
      text-align: center;
   }
-   .menu-content_inner h4{
-     align-content: space-around;
-     text-align: center;
-  }
-  
   .menu-content_inner a{
     padding: 20px 20px 20px 20px;
   border:1px solid #2662d5;
