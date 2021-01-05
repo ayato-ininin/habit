@@ -152,7 +152,7 @@ h3{
   #hamburger span{
     position: absolute;
     left: 8px;
-    top:12px;
+    top:18px;
     display: block;
     width: 35px;
     height: 3px;
@@ -173,22 +173,22 @@ h3{
   .right-header{
     display: none;
   }
-    #hamburger.active{
+    #hamburger span:hover{
       opacity: 0.6;
       transform: skew(70deg);
     }
   .menu-content {
     display: block;
-    width: calc(100% - 80px);
+    width: calc(100% - 90px);
     height: 100%;
     text-align: center;
     transition: 0.2s;
     position: fixed;
     top: 0;
-    left: calc(-100% - 80px);
+    left: calc(-100% - 90px);
     background: white;
     color: #333333;
-    box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+    box-shadow: 90px 0 rgba(38, 98, 213, 0.3);
     z-index: 999;
     overflow-x: hidden;
   }
@@ -209,9 +209,10 @@ h3{
   .menu-content li {
     width: 100%;
     text-align: center;
+     align-content: space-around;
   }
   .menu-content_inner a{
-    padding: 8px 8px 8px 8px;
+    padding: 20px 20px 20px 20px;
   border:1px solid #2662d5;
   border-radius:10px;
   /* ボーダーにradiusで丸みをつける */
@@ -225,10 +226,10 @@ h3{
    color: #2662d5;
   }
   .sidenavs h4 {
-  margin:30px auto;
-  width:250px;
+  margin:0 auto;
+  width:200px;
   border:1px solid #2662d5;
-  border-radius:10px;
+ 
   /* ボーダーにradiusで丸みをつける */
 }
   .menu-content.open {
