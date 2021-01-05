@@ -58,7 +58,8 @@ export default {
   components:{
     HeaderAuth,
     DesignCss,
-    Footer
+    Footer,
+    Loading
   },
   mounted() {
     setTimeout(() => {
