@@ -100,6 +100,14 @@ export default {
         habit_id:this.id,
         id:contentid
       })
+      .then((response)=>{
+        console.log(response),
+        // eslint-disable-line no-console
+        this.$router.go({
+          path:this.$router.currentRoute.path,
+          force:true,
+        });
+      });
     },
   },
   created(){
