@@ -211,10 +211,15 @@ h3{
     text-align: center;
     
   }
-  .menu-content_inner li span{
+  .menu-content_inner li span h4{
      align-content: space-around;
      text-align: center;
   }
+   .menu-content_inner h4{
+     align-content: space-around;
+     text-align: center;
+  }
+  
   .menu-content_inner a{
     padding: 20px 20px 20px 20px;
   border:1px solid #2662d5;
