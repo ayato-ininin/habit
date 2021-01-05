@@ -173,9 +173,9 @@ h3{
   .right-header{
     display: none;
   }
-  .header__menu__line{
+  #hamburger:hover span{
       opacity: 0.6;
-      transform: skew(120deg);
+      transform: skew(70deg);
     }
   .menu-content {
     display: block;
@@ -211,7 +211,7 @@ h3{
     text-align: center;
     
   }
-  .menu-content ul{
+  .menu-content_inner li{
      align-content: space-around;
      text-align: center;
   }
