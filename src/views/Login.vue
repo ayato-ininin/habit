@@ -1,10 +1,11 @@
 <template>
 
   <div class="habit">
+    <v-app>
     <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
-
-    <div class="content">
+    <Loading v-show="loading"></Loading>
+    <div class="content" v-show="!loading">
       <h2>ログイン</h2>
       <div class="card">
         <form>
@@ -16,7 +17,7 @@
     </div>
 
     <Footer></Footer>
-    
+    </v-app>
   </div>
 </template>
 
@@ -24,16 +25,19 @@
 import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
 import Footer from '../components/Footer';
+import Loading from '../components/Loading'
 export default{
   components:{
     HeaderAuth,
     DesignCss,
-    Footer
+    Footer,
+    Loading
   },
   data(){
     return{
       name:"",
-      password:""
+      password:"",
+      Loading:true
     };
   },
   methods:{
@@ -43,7 +47,12 @@ export default{
         password:this.password
       });
     }
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
+  },
 };
 </script>
 

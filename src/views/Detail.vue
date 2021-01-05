@@ -1,5 +1,9 @@
 <template>
-<div class="detail">
+<div>
+  <v-app>
+ <Loading v-show="loading"></Loading>
+<div class="detail" v-show="!loading">
+
     <DesignCss2></DesignCss2>
     <Header></Header>
     <br><br>
@@ -34,18 +38,22 @@
     </div>
   </div>
 </div>
+</v-app>
+</div>
 </template>
 
 <script>
 import DesignCss2 from '../components/DesignCss2';
 import axios from "axios";
 import Header from '../components/Header'
-
+import Loading from '../components/Loading.vue';
+import Loading from '../components/Loading'
 export default {
   props:["id"],
   components:{
     DesignCss2,
-    Header
+    Header,
+    Loading
    
   },
   data(){
@@ -115,7 +123,12 @@ export default {
   created(){
     this.gethabits();
     this.reload();
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
+  },
 }
 </script>
 
