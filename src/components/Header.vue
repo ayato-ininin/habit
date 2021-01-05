@@ -17,7 +17,7 @@
          </div>
           <p @click="$router.push('/profile')">プロフィール変更</p>
           <p @click="$router.push('/main')">追加画面へ</p>
-         <p @click="logout">logout</p>
+         <p @click="logout">ログアウト</p>
          
        </div>
 <!-- ハンバーガーメニュー -->
@@ -27,28 +27,28 @@
       <span class="header__menu__line"></span>
       <span class="header__menu__line"></span>
        </div>
-      <div class="contentnav">
-       <nav class="menu-content" :class="{'open':isclass}">
-         <p class="menu-title">Habity</p>
+     <div class="contentnav">
+     <nav class="menu-content" :class="{'open':isclass}">
+         <h2 class="menu-title">Habity</h2>
       <ul class="menu-content_innner">
         <li><span>
-          <a @click="openmodal">アプリ概要</a>
+          <p @click="openmodal">アプリ概要</p>
            </span>
         </li>
         <li><span>
-          <a @click="$router.push('/profile')">プロフィール変更</a>
+          <p @click="$router.push('/profile')">プロフィール変更</p>
            </span>
         </li>
         <li><span>
-          <a @click="$router.push('/main')">追加画面へ</a>
+          <p @click="$router.push('/main')">追加画面へ</p>
            </span>
         </li>
         <li><span>
-          <a @click="logout">logout</a>
+          <a @click="logout">ログアウト</a>
            </span>
         </li>
       </ul>
-       </nav>
+    </nav>
        </div>
       </div>
     </div>
@@ -140,23 +140,23 @@ h3{
 /* ハンバーガー用 */
 @media screen and (max-width: 768px){
   #hamburger{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     cursor: pointer;
     z-index: 100;
-    top: 15px;
+    top: 20px;
     right: 20px;
     transition: 0.4s;
-    background-color: white;
+    background-color: #4169e1;
   }
   #hamburger span{
     position: absolute;
-    left: 2px;
+    left: 8px;
     display: block;
     width: 35px;
-    height: 2px;
-    background-color: black;
+    height: 3px;
+    background-color:white;
     transition: 0.8s;
   }
     #hamburger span:nth-of-type(1) {
@@ -204,8 +204,7 @@ h3{
     text-align: left;
     font-weight: bold;
   }
-  .menu-content li a {
-    color: #333333;
+  .menu-content li p {
     margin: 15px;
     padding: 5px;
     border-bottom: 0.5px solid #2662d5;
