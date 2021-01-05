@@ -28,19 +28,19 @@
       <span class="header__menu__line"></span>
        </div>
      <div class="contentnav">
-     <nav class="menu-content" :class="{'open':isclass}">
+     <nav class="menu-content" :class="{'open':isclass}" v-show="isclass">
          <h2 class="menu-title">Habity</h2>
       <ul class="menu-content_innner">
         <li><span>
-          <p @click="openmodal">アプリ概要</p>
+          <h3 @click="openmodal">アプリ概要</h3>
            </span>
         </li>
         <li><span>
-          <p @click="$router.push('/profile')">プロフィール変更</p>
+          <h3 @click="$router.push('/profile')">プロフィール変更</h3>
            </span>
         </li>
         <li><span>
-          <p @click="$router.push('/main')">追加画面へ</p>
+          <h3 @click="$router.push('/main')">追加画面へ</h3>
            </span>
         </li>
         <li><span>
@@ -153,6 +153,7 @@ h3{
   #hamburger span{
     position: absolute;
     left: 8px;
+    top:8px;
     display: block;
     width: 35px;
     height: 3px;
@@ -199,17 +200,22 @@ h3{
   }
   .menu-content .menu-title {
     margin: 40px 20px;
-    font-size: 2.2rem;
-    color: #333333;
+    font-size: 20px;
+    color:  #2662d5;
     text-align: left;
     font-weight: bold;
   }
-  .menu-content li p {
+  .menu-content li h3 {
     margin: 15px;
     padding: 5px;
+    cursor: pointer;
     border-bottom: 0.5px solid #2662d5;
     text-decoration: none;
     display: block;
+    color:  #2662d5;
+  }
+  .menu-content li h3:hover{
+    text-decoration: underline;
   }
   .menu-content li {
     width: 100%;
