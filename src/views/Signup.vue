@@ -2,8 +2,8 @@
   <div class="habit">
     <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
-
-  <div class="content">
+    <Loading v-show="loading"></Loading>
+  <div class="content" v-show="!loading">
       <h2>新規登録</h2>
       <div class="card">
         <form>
@@ -26,12 +26,14 @@ import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
 import Footer from '../components/Footer';
 import axios from "axios";
+import Loading from '../components/Loading'
 export default {
   data(){
     return{
       name:"",
       email:"",
-      password:""
+      password:"",
+      loading:true
     };
   },
   methods:{
@@ -57,7 +59,12 @@ export default {
     HeaderAuth,
     DesignCss,
     Footer
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
+  },
 };
 </script>
 

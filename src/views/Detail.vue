@@ -2,12 +2,12 @@
 <div>
   <v-app>
  <Loading v-show="loading"></Loading>
-<div class="detail" v-show="!loading">
+<div class="detail">
 
     <DesignCss2></DesignCss2>
     <Header></Header>
     <br><br>
-  <div class="center">
+  <div class="center" v-show="!loading">
     <div id="element">
       <h2 v-for="(items,index) in habits" :key="index">{{items.item.habit}}</h2>
       <br>

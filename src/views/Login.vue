@@ -4,8 +4,7 @@
     <v-app>
     <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
-    <Loading v-show="loading"></Loading>
-    <div class="content" v-show="!loading">
+    <div class="content">
       <h2>ログイン</h2>
       <div class="card">
         <form>
@@ -25,13 +24,11 @@
 import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
 import Footer from '../components/Footer';
-import Loading from '../components/Loading'
 export default{
   components:{
     HeaderAuth,
     DesignCss,
-    Footer,
-    Loading
+    Footer
   },
   data(){
     return{
@@ -47,12 +44,7 @@ export default{
         password:this.password
       });
     }
-  },
-  mounted() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 1000);
-  },
+  }
 };
 </script>
 
