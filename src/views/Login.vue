@@ -1,6 +1,9 @@
 <template>
+<div>
+  <v-app>
+  <Loading v-show="loading"></Loading>
 
-  <div class="habit">
+  <div class="habit" v-show="!loading">
     <v-app>
     <DesignCss></DesignCss>
     <HeaderAuth></HeaderAuth>
@@ -18,17 +21,22 @@
     <Footer></Footer>
     </v-app>
   </div>
+
+</v-app>
+</div>
 </template>
 
 <script>
 import HeaderAuth from '../components/HeaderAuth';
 import DesignCss from '../components/DesignCss';
 import Footer from '../components/Footer';
+import Loading from '../components/Loading'
 export default{
   components:{
     HeaderAuth,
     DesignCss,
-    Footer
+    Footer,
+    Loading
   },
   data(){
     return{
@@ -45,6 +53,12 @@ export default{
       });
     }
   }
+  ,
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
+  },
 };
 </script>
 
