@@ -108,7 +108,7 @@ text-decoration: underline;
 font-weight: bold;
 }
 #overlay {
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -143,7 +143,7 @@ h3{
     height: 50px;
     position: absolute;
     cursor: pointer;
-    z-index: 100;
+    z-index: 50;
     top: 20px;
     right: 20px;
     transition: 0.4s;
@@ -173,9 +173,9 @@ h3{
   .right-header{
     display: none;
   }
-  #hamburger:hover span{
+  #hamburger span{
       opacity: 0.6;
-      transform: skew(70deg);
+      transform: skew(90deg);
     }
   .menu-content {
     display: block;
@@ -211,7 +211,7 @@ h3{
     text-align: center;
     
   }
-  .menu-content_inner li{
+  .menu-content_inner li span{
      align-content: space-around;
      text-align: center;
   }
