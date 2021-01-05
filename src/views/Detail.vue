@@ -100,6 +100,7 @@ export default {
         id:contentid
       })
       .then((response)=>{
+        console.log(response);
         console.log(contentid);
         // eslint-disable-line no-console
         alert('削除しました');
