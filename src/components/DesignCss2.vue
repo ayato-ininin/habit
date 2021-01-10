@@ -1,6 +1,6 @@
 <template>
 <div class=content>
-<div class="area" >
+<div class="area" ></div >
             <ul class="circles">
                     <li></li>
                     <li></li>
@@ -13,7 +13,7 @@
                     <li></li>
                     <li></li>
             </ul>
-    </div >
+
 
 </div>
 </template>
@@ -49,6 +49,7 @@ body{
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100%;
+    z-index: -1;
 }
 
 
