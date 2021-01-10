@@ -31,6 +31,7 @@ html {
 }
 body{
     font-family: 'Exo', sans-serif;
+    margin: 0;
 }
 
 
