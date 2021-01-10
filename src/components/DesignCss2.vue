@@ -1,7 +1,6 @@
 <template>
-  <div class="context">
-        <h1>Pure Css Animated Background</h1>
-    
+
+      
 
 
 <div class="area" >
@@ -19,7 +18,7 @@
             </ul>
     </div >
 
-  </div>
+
 </template>
 <script>
 /*
@@ -46,15 +45,10 @@ body{
 .context {
     width: 100%;
     position: absolute;
-    top:50vh;
+    height: 100%;
     
 }
 
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
 
 
 .area{
