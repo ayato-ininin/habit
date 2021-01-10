@@ -37,6 +37,7 @@ body {
     bottom: 0;
     position:fixed;
     top: 0;
+    z-index: -1;
    
 }
 .circles{
