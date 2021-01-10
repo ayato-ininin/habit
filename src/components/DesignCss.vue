@@ -22,15 +22,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 html {
   height:100%;
 }
 body{
-    font-family: 'Exo', sans-serif;
     margin: 0;
 }
 
@@ -39,8 +35,8 @@ body{
 
 
 .area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background-color: #4e54c8;  
+    background-color: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:auto;
     z-index:-1;
