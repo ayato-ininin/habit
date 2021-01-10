@@ -1,8 +1,5 @@
 <template>
-
-      
-
-
+<div>
 <div class="area" >
             <ul class="circles">
                     <li></li>
@@ -18,7 +15,7 @@
             </ul>
     </div >
 
-
+</div>
 </template>
 <script>
 /*
@@ -41,13 +38,6 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
-
-.context {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    
-}
 
 
 
