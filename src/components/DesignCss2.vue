@@ -151,7 +151,9 @@ body{
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
+html {
+  height:100%;
+}
 
 
 @keyframes animate {

@@ -26,7 +26,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+html {
+  height:100%;
+}
 body{
     font-family: 'Exo', sans-serif;
 }
