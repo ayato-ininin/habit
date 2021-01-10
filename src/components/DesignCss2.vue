@@ -1,6 +1,6 @@
 <template>
 <div class=content>
-<div class="area" ></div >
+<div class="area" >
             <ul class="circles">
                     <li></li>
                     <li></li>
@@ -13,17 +13,11 @@
                     <li></li>
                     <li></li>
             </ul>
-
+    </div >
 
 </div>
 </template>
-<script>
-/*
-Background Gradients From -- 
-https://uigradients.com
-*/
 
-</script>
 
 <style scoped>
 
