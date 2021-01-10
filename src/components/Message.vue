@@ -131,7 +131,7 @@ button:hover{
 }
 
 .register{
-  color: #00ff00;
+  color: #7fffd4;
   margin-top: 5px;
   cursor: pointer;
   font-weight: bold;

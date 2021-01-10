@@ -15,7 +15,7 @@
 <style scoped>
 h1{
   font-size: 90px;
-  color: white;
+  color: #4169e1;
   line-height: 130px;
   margin-left: 15px;
 }
@@ -25,7 +25,7 @@ h1{
 }
 p{
   cursor: pointer;
-  color: white;
+  color: #4169e1;
   line-height: 130px;
   font-size: 20px;
   font-weight: bold;
