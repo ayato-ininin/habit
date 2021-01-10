@@ -1,5 +1,5 @@
 <template>
-<div class=content>
+
 <div class="area" >
             <ul class="circles">
                     <li></li>
@@ -15,7 +15,6 @@
             </ul>
     </div >
 
-</div>
 </template>
 
 
@@ -23,9 +22,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-html {
-  height:100%;
-}
 *{
     margin: 0px;
     padding: 0px;
@@ -36,16 +32,28 @@ body{
 }
 
 
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
 
 
 .area{
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:100%;
-    z-index: -1;
+    height:100vh;
+    
+   
 }
-
 
 .circles{
     position: absolute;
