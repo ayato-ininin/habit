@@ -1,6 +1,5 @@
 <template>
 <div>
-  <v-app>
   <Loading v-show="loading"></Loading>
 
   <div class="habit" v-show="!loading">
@@ -22,7 +21,6 @@
     </v-app>
   </div>
 
-</v-app>
 </div>
 </template>
 
