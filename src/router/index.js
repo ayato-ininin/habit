@@ -7,6 +7,7 @@ import store from "../store/index"
 import Total from '../views/Total.vue'
 import Detail from '../views/Detail.vue'
 import Profile from '../views/Profile.vue'
+import Apicontent from '../views/Apicontent.vue'
 
 Vue.use(VueRouter)
 
@@ -53,7 +54,15 @@ const routes = [
       requiresAuth:true,
     },
     props:true,
-  }
+  },
+    {
+    path: '/apicontent',
+    name: 'Apicontent',
+    component: Apicontent,
+    meta: {
+      requiresAuth:true,
+    }
+  },
 ]
 
 const router = new VueRouter({

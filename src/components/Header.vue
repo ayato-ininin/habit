@@ -5,16 +5,8 @@
         <h1>HABITY</h1>
        </div>
        <div class="right-header flex">
-         <p @click="openmodal">アプリ概要</p>
+         <p @click="$router.push('/apicontent')">アプリ概要</p>
 
-         <div id="overlay" v-if="show">
-           <div id="contents">
-             <h3>💫習慣の効果💫</h3>
-             <br>
-             <h4>まず、あなたは習慣にしようと思って失敗した経験はないですか？？<br><br>僕は早起きしよう！って思っても３日でやめました。😭<br><br>一回起きれない日があると、もうダメだ、、となってしまい、続けれないのです！🙅‍♂️<br><br>そこで僕が習慣を実行しながらこのアプリを作成しました。<br><br>習慣化アプリは世の中にたくさんあります。ですが、どれもできたかできてないか。その二択です。<br>つまり、出来なければ、もうダメ。という認識になっており、それが人の習慣化を妨げていると思います。😩<br><br>なので今回、できたかどうかではなく、何点満点でらどこまでできたのか、というのを記録するアプリを作りました！🔥<br><br>これを使い、毎日、小さなことでも、少しでいいからやってみて下さい。<br>福利の効果はすごいです。のちのちあなたの大きな資産になります。<br><br>少しでいい、でも毎日続けてほしい。<br>そんな思いで作っています。☺️<br><br>最後に名言を。<br><br>「心が変われば行動が変わる 行動が変われば習慣が変わる 習慣が変われば人格が変わる 人格が変われば運命が変わる」 <br><br>by William James <br><br>習慣で人は変われると、心から信じています。<br></h4><br>
-             <button @click="closemodal">習慣登録へ</button>
-           </div>
-         </div>
           <p @click="$router.push('/profile')">プロフィール変更</p>
           <p @click="$router.push('/main')">追加画面へ</p>
          <p @click="logout">ログアウト</p>
@@ -31,7 +23,7 @@
      <nav class="menu-content" :class="{'open':isclass}" v-show="isclass">
       <ul class="menu-content_inner">
         <li>
-          <a @click="openmodal">アプリ概要</a>
+          <a @click="$router.push('/apicontent')">アプリ概要</a>
            
         </li>
         <li>
