@@ -48,6 +48,16 @@ h3{
 }
 #contents button{
   cursor: pointer;
-  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  #contents{
+    width: 80%;
+    height: 80%;
+    font-size: 12px;
+
+  }
+  
 }
 </style>
