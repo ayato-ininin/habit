@@ -54,8 +54,8 @@ h3{
 @media screen and (max-width: 768px){
   #contents{
     width: 80%;
-    height: 80%;
-    font-size: 12px;
+    height: auto;
+    font-size: 14px;
 
   }
   
