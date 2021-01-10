@@ -29,6 +29,9 @@ https://uigradients.com
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+html {
+  height:100%;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -40,12 +43,12 @@ body{
 
 
 
-.content{
-  background: #4e54c8;  
+
+.area{
+    background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100%;
-
 }
 
 
